@@ -1,0 +1,63 @@
+\setlength{\headheight}{26pt}
+\maketitle %中文封面
+\MAKETITLE %英文封面
+\makedeclaration % 作者声明
+
+\intobmk\chapter*{\texorpdfstring{摘\quad 要}{摘要}}
+% 研究目的、内容、方法、成果和结论
+\setcounter{page}{1}
+\pagenumbering{Roman}
+时间序列分析是指从按时间排序的数据集中挖掘有用信息的统计技术。随着机器学习理论的发展，尤其是具备长短期记忆单元的神经网络（Long Short-Term Memory Recurrent Neural Network，简称LSTM-RNN）以及一维卷积神经网络（One Dimensional Convolutional Neural Networks，简称1DCNN），基于机器学习的分析方法处理时间序列数据取得了一些成果。鉴于时间序列数据具有非平稳性、非高斯性和非线性等特征，基于机器学习的分析方法提取时间序列数据中有价值的信息仍然具有一定的挑战性。本论文基于机器学习方法，根据数据集的复杂度选择了几种具有代表性的时间序列数据（太阳黑子、泉流量和中期震级预报），试图构建不同输入和输出时间窗口分别进行探索时间序列数据。本论文几项研究工作的内容和结论如下：
+\begin{enumerate}
+
+  \item[(1)] \textbf{利用神经网络预测太阳黑子变化}。太阳活动是太阳大气中局部区域各种不同活动现象的总称。太阳黑子是太阳局部强磁场活动在太阳光球表面上产生的黑色斑块，是太阳活动强弱的重要指标。太阳黑子变化影响着日光层环境、地球气候、人类空间活动等。理解太阳活动机制是许多科研工作者关注的重点。有关太阳黑子记录最长可达400多年，这为理解太阳活动机制奠定了基础。
+
+  目前已有研究利用年均或月均太阳黑子数量或面积预测未来太阳黑子变化，但针对未来太阳周（例如第25太阳周）的峰值与过去太阳周的峰值相比呈现上升还是下降趋势，并未统一的结论。传统意义上的基于物理机制的模型和统计模型在预测太阳黑子变化过程中会刻意简化模型，即假设时间序列是由线性过程产生的，导致模型难以准确捕获太阳黑子时间序列趋势。
+  
+  这里采用月均太阳黑子数量和面积分别进行预测和对照分析。同时采用不同结神经网络，分别为LSTM-RNN、1DCNN和具备LSTM神经元和一维卷积层的神经网络（Long Short-Term Memory and One Dimensional Convolutional Neural Networks，简称LSTM-1DCNN）。还采纳了不同的输入和输出时间窗口。输入时间窗口选择了72个月（6年）、132个月（11年）、264个月（22年）；输出时间窗口选择了1个月和72个月。
+  
+  最终发现，三种的神经网络均能较好地探测太阳黑子强度及周期性变化，且LSTM-1DCNN的性能优于LSTM-RNN和1DCNN，而且模型性能会随着层数和节点数的增加而有略微提升，随着输出节点的增加而有所下降。利用LSTM-1DCNN预测2021年9月太阳黑子数为41.15，2021年8月太阳黑子面积为88.61。基于LSTM-1DCNN预测72个月峰值的太阳黑子数为132.86（发生时间2024年12月），太阳黑子面积为1469.01（发生时间2025年3月）。两者结果显示，第25太阳周的峰值跟第24太阳周基本持平。
+
+  \item[{(2)}] \textbf{利用机器学习预测龙子祠泉流量变化}。近些年来，地下水过度开采，井水干枯、溪流和湖泊等淡水区的水量减少、抽水成本日益增加、地面沉降、供水配给不足等现象时有发生。泉流量是地下水到地表水过渡的重要指标，反映了含水层的动态变化。泉流量是一系列动态变化的结果，整个泉域可看作是一个复杂系统。一般来讲，对于泉流量的定量分析需要考虑水文地质特征、地貌特征、土地利用、土地覆盖、人为开采和气候条件等。
+  
+  这里数据包括龙子祠泉流量、泉域周围九个区域（即化乐、克城、山头、一平垣、台头、光华、河底、双风渰、关王庙）的降水量。理论上，利用平衡方程模型可估计未来泉流量。但在实际应用过程中，研究者会简化分析。基于不同的机器学习模型在不同输入和输出时间窗口下预测泉流量，并进行比较分析。这些模型包括LSTM-RNN、1DCNN、LSTM-1DCNN、支持向量机（Support Vector Regression，简称SVR）、线性回归（Linear Regression，简称LR）、随机森林（Random Forest，简称RF）、决策树（Decision Tree，简称DT）、K近邻（k-Nearest Neighbor，简称KNN）。
+  
+  将输入和输出时间窗口分别设置为1至4个月。将不同时间窗口的输入和输出数据喂给不同的机器学习模型。总体来看，8类模型的性能评价指标（MSE和RMSE）都较小，因此几种方法都适合预测未来泉流量变化。输入时间窗口从1个月增加到4个月会逐渐降低模型的预测能力，这在某种程度上说明了输入数据存在一定程度上的冗余，这些冗余信息会在拟合过程中被忽视。随着输出时间窗口的增加，模型的性能会出现一定幅度的下降。这里输入和输出时间窗口对预测泉流量的模型性能的影响同研究太阳黑子类似，即需要找到合适的输入时间窗口，而输出时间窗口则在目标时间内越短越好。另外，进一步研究发现，仅仅利用历史1个月的泉流量就能精确预测未来1个月龙子祠的泉流量，可能是因为降水量随季节变化，而模型学到了泉流量按季节变化的特征。
+  
+  \item[(3)] \textbf{机器学习对南加州地区的地震中期预报}。大震发生很可能会导致严重的人员伤亡和经济损失，影响社会经济的可持续发展。为了减小这些损失，预报强震就显得尤为重要。地震预报一般会涉及到几大要素：时间、地点、震级、可能发生的概率。根据预报的时间长度，地震预报分为长期、中期和短期预报。其中，短期预报不可控因素太多，这里不予以考虑。长期预报需要的观测资料年限至少上百年，目前数据时长仍旧欠缺。因此，地震中期预报成为关注的重点。
+  
+  地震数据来源于美国南加州地区地震目录。该地震目录记录时间较长（\sim 90年），完备性较好，且南加州地区的地震活动较为频繁，是一个理想的数据库。从地震目录中计算了16种不同的地震因子，采用不同机器学习方法，分别为LSTM-RNN、SVR、LR、RF、DT、KNN、梯度提升回归（Gradient Boosting Regression Tree，简称GBRT）、极端随机森林回归（Extra Trees Regressor，简称ETR），对区域内可能发生的最大震级进行了中期预报。从所有模型的表现来看，多数模型拟合的结果均出现了很大程度的过拟合现象，即训练集的误差很小，而测试集的误差很大。对于DT、KNN和ETR三类模型，训练集的误差甚至为0，所有的训练集都处于置信区间内，即模型能够拟合训练集的所有特征（包括噪声）。整体来看，本研究中机器学习对南加州地区的地震中期预报是过拟合的。模型性能极易受到数据集扰动的影响，可能的原因是输入数据中可能遗漏了未知的重要变量或需要更长时间的数据集。
+
+  综合以上三个方向，发现利用机器学习探索时间序列数据时，输入和输出时间窗口会影响模型的性能。选择合适的而不是较多的输入特征有助于提高模型性能。增加输出时间窗口会降低模型性能。机器学习在探索时间序列时，需要考虑到数据集的完备性以及找到合适的输入特征，这才有助于探索目标任务。
+
+\end{enumerate}
+\keywords{机器学习，时间序列，泉流量，太阳黑子，中期震级预报}
+
+
+\intobmk\chapter*{Abstract}
+% 研究目的、内容、方法、成果和结论。
+With the continuous development of artificial intelligence (AI), computer storage information, computing performance, and the explosive growth of various observation data, using AI to mine information has become the common interest pursuit of science and industry. As one of the important branches of AI, machine learning (ML) is a popular research area of data mining. So far, ML is widely used in the fields of groundwater, sunspot, micro-seismic detection and so on. With the progress of ML theory, especially the long short term memory recurrent neural network (LSTM-RNN) and one dimensional convolutional neural networks (1DCNN), there are achieving remarkable results dealing with time series data. However, in the face of non-stationary with time series, non Gaussian and nonlinear, it is difficult to extract information from time series data by ML. Based on various approaches of ML, we select several representative time series data (sunspot, spring discharge and medium-term earthquake magnitude prediction), and try to construct different input and output time windows to explore the time series data respectively. The contents and conclusions of the research works are as follows:
+\begin{enumerate}
+
+  \item[(1)] \textbf{Prediction of sunspot various by neural network}. Solar activity is a general term for varieties of different activity phenomena in localized regions of the solar atmosphere. Sunspots are black patches produced on the surface of the solar photosphere by the strong local magnetic activity of the Sun, and an important indicator of the strength of solar activity. Sunspot various will affect the heliospheric environment, the earth's climate, human space activities and so on. Understanding the mechanism of solar activities is one of the tasks of many researchers. Sunspots are recorded more than 400 years, which lay the foundation for understanding the mechanism of solar activity. 
+ 
+  Even though the current studies have used the average annual or monthly sunspot number or area to predict the future sunspot various, there are still no unified conclusion on whether the peak value of the future solar cycle (such as cycle 25) shows an upward or downward trend compared with the past solar cycle. The traditional physical models and statistical models will deliberately simplify the model in the process of predicting sunspot changes, for assuming that the time series dataset are generated by a linear process, which makes it difficult for accurately capturing the sunspot time series relationship.
+
+  Here, we use the monthly average sunspot number and area for prediction and comparative analysis. ANNs with different structures are adopted, namely LSTM-RNN, 1DCNN and LSTM-1DCNN. Similar to the prediction of spring discharge, we also adopt different input and output time windows. For the input window, we select 72 months (6 years), 132 months (11 years) or 264 months (22 years);  For the output window, we select 1 month or 72 months.
+
+  Finally, we find that the performance of LSTM-1DCNN is better than LSTM-RNN and 1DCNN, and the performance of the model increases with the increase of hidden layers and their nodes, and decreases with the increase of output nodes. The maximum sunspots' number in September 2021 by LSTM-1DCNN is 41.15 and the maximum sunspots' area in August 2021 is 88.61. The maximum sunspots' number and area in the future 72 months predicted by LSTM-1DCNN is 132.86 (occurs in December 2024) and 1469.01 (occurs in March 2025). Both results show that the peak values of cycle 25 are basically the same as cycle 24. 
+
+  \item[(2)] \textbf{Predicting spring discharge in Longzici spring by machine learning}. In recent years, over exploitation of groundwater, dry well water, reduction of water volume in fresh water areas such as streams and lakes, increasing pumping cost, land subsidence and insufficient water supply have occurred from time to time. Spring discharge is an important indicator of the transition from groundwater to surface water, which reflects the dynamic change of aquifer and the normal operation of water flow system in spring area. Spring discharge is the result of a series of dynamic changes. The whole spring area can be regarded as a nonlinear complex system because the groundwater flow paths are complex. Generally speaking, the quantitative analysis of spring discharge needs to consider hydrogeological characteristics Geomorphic features, land use, land cover, man-made mining and climatic conditions, and so on.
+  
+  The dataset include the flow of Longzici spring and the precipitation in nine surrounding areas. These areas including Huale, Kecheng, Shantou, Yipingyuan, Taitou, Guanghua, Hedi, Shuangfenglu and Guanwangmiao. Theoretically, the spring discharge can be estimated by the equilibrium equation model. However, in the practical application, researchers often simplify the models. Based on different ML models, we predict the spring discharge under different conditions, and make a comparative analysis. These models include LSTM-RNN, 1DCNN, long short term memory and one dimensional convolutional neural networks (LSTM-1DCNN), support vector regression (SVR), linear regression (LR), random forest (RF), decision tree (DT), and k-nearest neighbor (KNN).
+
+  We set the input time windows from 1 to 4 months respectively, and set the output windows from 1 to 4 months respectively. The input and output data with different time windows are fed into different ML models. Overall, the performance evaluation indexes (MSE and RMSE) of the eight models are relatively small, thus these methods are suitable for predicting the various of spring discharge. As for the input windows, the input time windows from one to four month will not improve the performance of the models, which indicates that there is redundant information in the input data to a certain extent which will be ignored in the fitting process. For the output windows, it ranges from 1 to 4 months, which will slightly reduce the performance of the model, which shows that the spring discharge will become more and more inaccurate with the extension of the output windows. These results are similar to the sunspots various. Otherwise, we find that historical spring discharge for one month can accurately predict the future spring discharge of the Longzici. The reason can be explained that precipitation varies seasonally and the model learns that spring discharge varies seasonally.
+  
+  \item[(3)] \textbf{Medium term earthquake prediction in Southern California by machine learning}. The occurrences of a large earthquake are likely to cause serious casualties and economic losses, and affect the sustainable development of social economy. To reduce these losses, it is important to predict strong earthquakes with high accuracy. Earthquake prediction generally involves several elements: time, location, magnitude and probability of occurrence. According to time span, earthquake prediction is divided into long-term, medium-term and short-term prediction. Among them, there are too many uncontrollable factors in short-term prediction, which will not be considered here. For long-term prediction, the observation dataset are required at least hundreds of years. At present, our observations duration are still insufficient. Therefore, medium-term earthquake prediction becomes the focus of our study.
+
+  The seismic dataset comes from the earthquake catalog of Southern California, USA. This catalog is an ideal database because it has been recoding for a long time (\sim 90 years) with good completeness, and seismic activity is more frequent in the Southern California region. From the earthquake catalog, we calculate 16 different earthquake factors and use several ML methods, namely LSTM-RNN, SVR, LR, RF, DT, KNN, gradient boosting regression tree (GBRT) and extra trees regression (ETR), to predict the maximum earthquake magnitude that may occur in the region within the medium term. From the performance of all models, they have a large degree of over fitting. That is, the error of the training set is very small, while the error of the testing set is very large. For DT, KNN and ETR models, the error of the training set even reaches 0 and within the scope of the training data set is in the confidence interval. That is, the model can fit all the features of the training set, including noises. It can be seen from these results that ML methods appears over fitting to explore the medium-term earthquake prediction in Southern California in this study. The possible reasons are followings: We miss some important factors; We need to collect more earthquake catalog.
+
+  Combining these three directions, we find that the input and output time windows affect the performance of the model when exploring time series data using machine learning. Choosing the right rather than more input features helps to improve the model performance. Increasing the output time window decreases the model performance. Machine learning needs to consider the completeness of the dataset and finding the appropriate input features when exploring time series in order to explore the target task.
+
+\end{enumerate}
+\KEYWORDS{Machine Learning, Time Series, Spring Discharge, Sunspot, Earthquake Prediction}

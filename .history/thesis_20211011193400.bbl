@@ -1,0 +1,322 @@
+\begin{thebibliography}{46}
+\providecommand{\biband}{和}
+\providecommand{\bibetal}{等}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{#1}
+\expandafter\ifx\csname urlstyle\endcsname\relax\else
+  \urlstyle{same}\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \DeclareUrlCommand\doi{\urlstyle{rm}}
+  \def\eprint#1#2{#2}
+\else
+  \def\doi#1{\href{https://doi.org/#1}{\nolinkurl{#1}}}
+  \let\eprint\href
+\fi
+
+\bibitem[Abrahart {\bibetal}(2012)Abrahart, Anctil, Coulibaly, Dawson, Mount,
+  See, Shamseldin, Solomatine, Toth, and Wilby]{abrahart2012two}
+Abrahart~R~J, Anctil~F, Coulibaly~P, et~al.
+\newblock Two decades of anarchy? Emerging themes and outstanding challenges
+  for neural network river forecasting [J].
+\newblock Progress in Physical Geography, 2012, 36\penalty0 (4): 480-513.
+
+\bibitem[Ahmad {\bibetal}(2010)Ahmad, Kalra, and Stephen]{ahmad2010estimating}
+Ahmad~S, Kalra~A, Stephen~H.
+\newblock Estimating soil moisture using remote sensing data: A machine
+  learning approach [J].
+\newblock Advances in Water Resources, 2010, 33\penalty0 (1): 69-80.
+
+\bibitem[Amaranto {\bibetal}(2018)Amaranto, Munoz-Arriola, Corzo, Solomatine,
+  and Meyer]{amaranto2018semi}
+Amaranto~A, Munoz-Arriola~F, Corzo~G, et~al.
+\newblock Semi-seasonal groundwater forecast using multiple data-driven models
+  in an irrigated cropland [J].
+\newblock Journal of Hydroinformatics, 2018, 20\penalty0 (6): 1227-1246.
+
+\bibitem[Amaranto {\bibetal}(2019)Amaranto, Munoz-Arriola, Solomatine, and
+  Corzo]{amaranto2019spatially}
+Amaranto~A, Munoz-Arriola~F, Solomatine~D, et~al.
+\newblock A spatially enhanced data-driven multimodel to improve semiseasonal
+  groundwater forecasts in the high plains aquifer, usa [J].
+\newblock Water Resources Research, 2019, 55\penalty0 (7): 5941-5961.
+
+\bibitem[Bartolino(2003)]{bartolino2003ground}
+Bartolino~J~R.
+\newblock Ground-water depletion across the nation [M].
+\newblock US Department of the Interior, US Geological Survey, 2003.
+
+\bibitem[Butler~Jr {\bibetal}(2018)Butler~Jr, Whittemore, Wilson, and
+  Bohling]{butler2018sustainability}
+Butler~Jr~J~J, Whittemore~D~O, Wilson~B~B, et~al.
+\newblock Sustainability of aquifers supporting irrigated agriculture: A case
+  study of the high plains aquifer in kansas [J].
+\newblock Water International, 2018, 43\penalty0 (6): 815-828.
+
+\bibitem[Cheng {\bibetal}(2021)Cheng, Qiao, Shi, and Wang]{cheng2021machine}
+Cheng~S, Qiao~X, Shi~Y, et~al.
+\newblock Machine learning for predicting discharge fluctuation of a karst
+  spring in north china [J].
+\newblock Acta Geophysica, 2021, 69\penalty0 (1): 257-270.
+
+\bibitem[Coppola~Jr {\bibetal}(2003)Coppola~Jr, Szidarovszky, Poulton, and
+  Charles]{coppola2003artificial}
+Coppola~Jr~E, Szidarovszky~F, Poulton~M, et~al.
+\newblock Artificial neural network approach for predicting transient water
+  levels in a multilayered groundwater system under variable state, pumping,
+  and climate conditions [J].
+\newblock Journal of Hydrologic Engineering, 2003, 8\penalty0 (6): 348-360.
+
+\bibitem[Dalin {\bibetal}(2017)Dalin, Wada, Kastner, and
+  Puma]{dalin2017groundwater}
+Dalin~C, Wada~Y, Kastner~T, et~al.
+\newblock Groundwater depletion embedded in international food trade [J].
+\newblock Nature, 2017, 543\penalty0 (7647): 700-704.
+
+\bibitem[Deka {\bibetal}(2014)Deka et~al.]{deka2014support}
+Deka~P~C, et~al.
+\newblock Support vector machine applications in the field of hydrology: A
+  review [J].
+\newblock Applied Soft Computing, 2014, 19: 372-386.
+
+\bibitem[Dibike {\bibetal}(2001)Dibike, Velickov, Solomatine, and
+  Abbott]{dibike2001model}
+Dibike~Y~B, Velickov~S, Solomatine~D, et~al.
+\newblock Model induction with support vector machines: Introduction and
+  applications [J].
+\newblock Journal of Computing in Civil Engineering, 2001, 15\penalty0 (3):
+  208-216.
+
+\bibitem[Diodato {\bibetal}(2014)Diodato, Guerriero, Fiorillo, Esposito,
+  Revellino, Grelle, and Guadagno]{diodato2014predicting}
+Diodato~N, Guerriero~L, Fiorillo~F, et~al.
+\newblock Predicting monthly spring discharges using a simple statistical model
+  [J].
+\newblock Water Resources Management, 2014, 28\penalty0 (4): 969-978.
+
+\bibitem[Etemad-Shahidi {\bibetal}(2011)Etemad-Shahidi and
+  Ghaemi]{etemad2011model}
+Etemad-Shahidi~A, Ghaemi~N.
+\newblock Model tree approach for prediction of pile groups scour due to waves
+  [J].
+\newblock Ocean Engineering, 2011, 38\penalty0 (13): 1522-1527.
+
+\bibitem[Fan {\bibetal}(2013)Fan, Huo, Hao, Liu, Wang, Liu, and
+  Yeh]{fan2013assembled}
+Fan~Y, Huo~X, Hao~Y, et~al.
+\newblock An assembled extreme value statistical model of karst spring
+  discharge [J].
+\newblock Journal of Hydrology, 2013, 504: 57-68.
+
+\bibitem[Fiorillo {\bibetal}(2010)Fiorillo and Doglioni]{fiorillo2010relation}
+Fiorillo~F, Doglioni~A.
+\newblock The relation between karst spring discharge and rainfall by
+  cross-correlation analysis (campania, southern italy) [J].
+\newblock Hydrogeology Journal, 2010, 18\penalty0 (8): 1881-1895.
+
+\bibitem[Galelli {\bibetal}(2010)Galelli, Gandolfi, Soncini-Sessa, and
+  Agostani]{galelli2010building}
+Galelli~S, Gandolfi~C, Soncini-Sessa~R, et~al.
+\newblock Building a metamodel of an irrigation district distributed-parameter
+  model [J].
+\newblock Agricultural Water Management, 2010, 97\penalty0 (2): 187-200.
+
+\bibitem[Goyal(2014)]{goyal2014modeling}
+Goyal~M~K.
+\newblock Modeling of sediment yield prediction using m5 model tree algorithm
+  and wavelet regression [J].
+\newblock Water resources management, 2014, 28\penalty0 (7): 1991-2003.
+
+\bibitem[Granata {\bibetal}(2016)Granata, Gargano, and
+  De~Marinis]{granata2016support}
+Granata~F, Gargano~R, De~Marinis~G.
+\newblock Support vector regression for rainfall-runoff modeling in urban
+  drainage: A comparison with the epa’s storm water management model [J].
+\newblock Water, 2016, 8\penalty0 (3): 69.
+
+\bibitem[Granata {\bibetal}(2017)Granata, Papirio, Esposito, Gargano, and
+  De~Marinis]{granata2017machine}
+Granata~F, Papirio~S, Esposito~G, et~al.
+\newblock Machine learning algorithms for the forecasting of wastewater quality
+  indicators [J].
+\newblock Water, 2017, 9\penalty0 (2): 105.
+
+\bibitem[Guzman {\bibetal}(2017)Guzman, Paz, and Tagert]{guzman2017use}
+Guzman~S~M, Paz~J~O, Tagert~M~L~M.
+\newblock The use of narx neural networks to forecast daily groundwater levels
+  [J].
+\newblock Water Resources Management, 2017, 31\penalty0 (5): 1591-1603.
+
+\bibitem[Hu {\bibetal}(2008)Hu, Hao, Yeh, Pang, and Wu]{hu2008simulation}
+Hu~C, Hao~Y, Yeh~T~C~J, et~al.
+\newblock Simulation of spring flows from a karst aquifer with an artificial
+  neural network [J].
+\newblock Hydrological Processes: An International Journal, 2008, 22\penalty0
+  (5): 596-604.
+
+\bibitem[Iglesias {\bibetal}(2015)Iglesias and Garrote]{iglesias2015adaptation}
+Iglesias~A, Garrote~L.
+\newblock Adaptation strategies for agricultural water management under climate
+  change in europe [J].
+\newblock Agricultural Water Management, 2015, 155: 113-124.
+
+\bibitem[Kresic {\bibetal}(2009)Kresic and Stevanovic]{kresic2009groundwater}
+Kresic~N, Stevanovic~Z.
+\newblock Groundwater hydrology of springs: Engineering, theory, management and
+  sustainability [M].
+\newblock Butterworth-heinemann, 2009.
+
+\bibitem[Lambrakis {\bibetal}(2000)Lambrakis, Andreou, Polydoropoulos,
+  Georgopoulos, and Bountis]{lambrakis2000nonlinear}
+Lambrakis~N, Andreou~A~S, Polydoropoulos~P, et~al.
+\newblock Nonlinear analysis and forecasting of a brackish karstic spring [J].
+\newblock Water Resources Research, 2000, 36\penalty0 (4): 875-884.
+
+\bibitem[Le {\bibetal}(2016)Le, Perez, Solomatine, and
+  Nguyen]{le2016meteorological}
+Le~M~H, Perez~G~C, Solomatine~D, et~al.
+\newblock Meteorological drought forecasting based on climate signals using
+  artificial neural network--a case study in khanhhoa province vietnam [J].
+\newblock Procedia Engineering, 2016, 154: 1169-1175.
+
+\bibitem[Najafzadeh {\bibetal}(2016{\natexlab{a}})Najafzadeh, Etemad-Shahidi,
+  and Lim]{najafzadeh2016scour}
+Najafzadeh~M, Etemad-Shahidi~A, Lim~S~Y.
+\newblock Scour prediction in long contractions using anfis and svm [J].
+\newblock Ocean Engineering, 2016, 111: 128-135.
+
+\bibitem[Najafzadeh {\bibetal}(2016{\natexlab{b}})Najafzadeh, Rezaie~Balf, and
+  Rashedi]{najafzadeh2016prediction}
+Najafzadeh~M, Rezaie~Balf~M, Rashedi~E.
+\newblock Prediction of maximum scour depth around piers with debris
+  accumulation using epr, mt, and gep models [J].
+\newblock Journal of Hydroinformatics, 2016, 18\penalty0 (5): 867-884.
+
+\bibitem[Najafzadeh {\bibetal}(2017{\natexlab{a}})Najafzadeh, Laucelli, and
+  Zahiri]{najafzadeh2017application}
+Najafzadeh~M, Laucelli~D~B, Zahiri~A.
+\newblock Application of model tree and evolutionary polynomial regression for
+  evaluation of sediment transport in pipes [J].
+\newblock KSCE Journal of Civil Engineering, 2017, 21\penalty0 (5): 1956-1963.
+
+\bibitem[Najafzadeh {\bibetal}(2017{\natexlab{b}})Najafzadeh, Tafarojnoruz, and
+  Lim]{najafzadeh2017prediction}
+Najafzadeh~M, Tafarojnoruz~A, Lim~S~Y.
+\newblock Prediction of local scour depth downstream of sluice gates using
+  data-driven models [J].
+\newblock ISH Journal of Hydraulic Engineering, 2017, 23\penalty0 (2): 195-202.
+
+\bibitem[Nayak {\bibetal}(2006)Nayak, Rao, and Sudheer]{nayak2006groundwater}
+Nayak~P~C, Rao~Y~S, Sudheer~K.
+\newblock Groundwater level forecasting in a shallow aquifer using artificial
+  neural network approach [J].
+\newblock Water Resources Management, 2006, 20\penalty0 (1): 77-90.
+
+\bibitem[Portmann {\bibetal}(2010)Portmann, Siebert, and
+  D{\"o}ll]{portmann2010mirca2000}
+Portmann~F~T, Siebert~S, D{\"o}ll~P.
+\newblock Mirca2000—global monthly irrigated and rainfed crop areas around
+  the year 2000: A new high-resolution data set for agricultural and
+  hydrological modeling [J].
+\newblock Global biogeochemical cycles, 2010, 24\penalty0 (1).
+
+\bibitem[Rakhshandehroo {\bibetal}(2018)Rakhshandehroo, Akbari, Igder, and
+  Ostadzadeh]{Rakhshandehroo2018Long}
+Rakhshandehroo~G, Akbari~A, Igder~M, et~al.
+\newblock Long term groundwater level forecasting in shallow and deep wells
+  using wavelet neural networks trained by an improved harmony search algorithm
+  [J/OL].
+\newblock Journal of Hydrologic Engineering, 2018, 23.
+\newblock DOI: \doi{10.1061/(ASCE)HE.1943-5584.0001591}.
+
+\bibitem[Sahoo {\bibetal}(2017)Sahoo, Russo, Elliott, and
+  Foster]{sahoo2017machine}
+Sahoo~S, Russo~T, Elliott~J, et~al.
+\newblock Machine learning algorithms for modeling groundwater level changes in
+  agricultural regions of the us [J].
+\newblock Water Resources Research, 2017, 53\penalty0 (5): 3878-3895.
+
+\bibitem[Singh {\bibetal}(2010)Singh, Pal, and Singh]{singh2010estimation}
+Singh~K~K, Pal~M, Singh~V.
+\newblock Estimation of mean annual flood in indian catchments using
+  backpropagation neural network and m5 model tree [J].
+\newblock Water Resources Management, 2010, 24\penalty0 (10): 2007-2019.
+
+\bibitem[Solomatine {\bibetal}(2003)Solomatine and Dulal]{solomatine2003model}
+Solomatine~D~P, Dulal~K~N.
+\newblock Model trees as an alternative to neural networks in rainfall—runoff
+  modelling [J].
+\newblock Hydrological Sciences Journal, 2003, 48\penalty0 (3): 399-411.
+
+\bibitem[Solomatine {\bibetal}(2004)Solomatine and Xue]{solomatine2004m5}
+Solomatine~D~P, Xue~Y.
+\newblock M5 model trees and neural networks: application to flood forecasting
+  in the upper reach of the huai river in china [J].
+\newblock Journal of Hydrologic Engineering, 2004, 9\penalty0 (6): 491-501.
+
+\bibitem[Sun(2013)]{sun2013predicting}
+Sun~A~Y.
+\newblock Predicting groundwater level changes using grace data [J].
+\newblock Water Resources Research, 2013, 49\penalty0 (9): 5900-5912.
+
+\bibitem[Sun {\bibetal}(2015)Sun, Wendi, Kim, and Liong]{Sun2015Technical}
+Sun~Y, Wendi~D, Kim~D~E, et~al.
+\newblock Technical note: Application of artificial neural networks in
+  groundwater table forecasting – a case study in singapore swamp forest
+  [J/OL].
+\newblock Hydrology and Earth System Sciences Discussions, 2015, 12: 9317-9336.
+\newblock DOI: \doi{10.5194/hessd-12-9317-2015}.
+
+\bibitem[Tapoglou {\bibetal}(2014)Tapoglou, Karatzas, Trichakis, and
+  Varouchakis]{tapoglou2014spatio}
+Tapoglou~E, Karatzas~G~P, Trichakis~I~C, et~al.
+\newblock A spatio-temporal hybrid neural network-kriging model for groundwater
+  level simulation [J].
+\newblock Journal of Hydrology, 2014, 519: 3193-3203.
+
+\bibitem[Toth(1971)]{toth1971groundwater}
+Toth~J.
+\newblock Groundwater discharge: A common generator of diverse geologic and
+  morphologic phenomena [J].
+\newblock Hydrological Sciences Journal, 1971, 16\penalty0 (1): 7-24.
+
+\bibitem[T{\'o}th(1999)]{toth1999groundwater}
+T{\'o}th~J.
+\newblock Groundwater as a geologic agent: An overview of the causes,
+  processes, and manifestations [J].
+\newblock Hydrogeology Journal, 1999, 7\penalty0 (1): 1-14.
+
+\bibitem[Wada {\bibetal}(2010)Wada, Van~Beek, Van~Kempen, Reckman, Vasak, and
+  Bierkens]{wada2010global}
+Wada~Y, Van~Beek~L~P, Van~Kempen~C~M, et~al.
+\newblock Global depletion of groundwater resources [J].
+\newblock Geophysical Research Letters, 2010, 37\penalty0 (20): 20.
+
+\bibitem[Wunsch {\bibetal}(2018)Wunsch, Liesch, and
+  Broda]{wunsch2018forecasting}
+Wunsch~A, Liesch~T, Broda~S.
+\newblock Forecasting groundwater levels using nonlinear autoregressive
+  networks with exogenous input (narx) [J].
+\newblock Journal of Hydrology, 2018, 567: 743-758.
+
+\bibitem[Yadav {\bibetal}(2017)Yadav, Ch, Mathur, and
+  Adamowski]{yadav2017assessing}
+Yadav~B, Ch~S, Mathur~S, et~al.
+\newblock Assessing the suitability of extreme learning machines (elm) for
+  groundwater level prediction [J].
+\newblock Journal of Water and Land Development, 2017\penalty0 (32): 103-112.
+
+\bibitem[Zahiri {\bibetal}(2018)Zahiri and Najafzadeh]{zahiri2018optimized}
+Zahiri~A, Najafzadeh~M.
+\newblock Optimized expressions to evaluate the flow discharge in main channels
+  and floodplains using evolutionary computing and model classification [J].
+\newblock International Journal of River Basin Management, 2018, 16\penalty0
+  (1): 123-132.
+
+\bibitem[Zhang {\bibetal}(1996)Zhang, Bai, Libra, Rowden, and
+  Liu]{zhang1996simulation}
+Zhang~Y~K, Bai~E~W, Libra~R, et~al.
+\newblock Simulation of spring discharge from a limestone aquifer in iowa, usa
+  [J].
+\newblock Hydrogeology Journal, 1996, 4\penalty0 (4): 41-54.
+
+\end{thebibliography}

@@ -1,0 +1,35 @@
+\addvspace {10.0pt}
+\addvspace {10.0pt}
+\contentsline {table}{\numberline {2.1}{\ignorespaces 过拟合与欠拟合的判断标准}}{22}{table.caption.18}%
+\addvspace {10.0pt}
+\contentsline {table}{\numberline {3.1}{\ignorespaces 13个月平滑的月均太阳黑子数量、峰值和谷值出现的时间}}{28}{table.caption.20}%
+\contentsline {table}{\numberline {3.2}{\ignorespaces 不同模型在不同的输入时间窗口长度下预测未来1个月太阳黑子数的拟合指标效果}}{32}{table.caption.24}%
+\contentsline {table}{\numberline {3.3}{\ignorespaces 最佳模型预测的太阳黑子活动}}{32}{table.caption.25}%
+\contentsline {table}{\numberline {3.4}{\ignorespaces 不同模型和输入时间窗口长度下预测未来1个月太阳黑子面积的拟合指标效果}}{36}{table.caption.26}%
+\contentsline {table}{\numberline {3.5}{\ignorespaces 不同输入时间窗口长度和层数下LSTM-1DCNN预测未来72个月太阳黑子数的拟合指标效果}}{37}{table.caption.29}%
+\contentsline {table}{\numberline {3.6}{\ignorespaces 最佳模型预测未来72个月太阳黑子活动的最大值}}{39}{table.caption.30}%
+\contentsline {table}{\numberline {3.7}{\ignorespaces 不同输入时间窗口长度和层数的LSTM-1DCNN预测未来72个月太阳黑子面积的拟合指标效果}}{40}{table.caption.32}%
+\contentsline {table}{\numberline {3.8}{\ignorespaces 不同研究给出的预测第25太阳周的太阳黑子活动相比于第24太阳周的强弱}}{42}{table.caption.34}%
+\addvspace {10.0pt}
+\contentsline {table}{\numberline {4.1}{\ignorespaces 不同模型在不同的输入和输出时间窗口长度下预测泉流量的拟合指标效果}}{52}{table.4.1}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces 最佳模型预测2019年1月泉流量}}{53}{table.caption.40}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces 最佳模型预测2019年1月和2月泉流量}}{55}{table.caption.42}%
+\contentsline {table}{\numberline {4.4}{\ignorespaces 最佳模型预测2019年1月至3月泉流量}}{55}{table.caption.44}%
+\contentsline {table}{\numberline {4.5}{\ignorespaces 最佳模型预测2019年1月至4月泉流量}}{59}{table.caption.46}%
+\contentsline {table}{\numberline {4.6}{\ignorespaces 不同模型利用历史1个月泉流量预测未来1个月泉流量的拟合指标效果}}{61}{table.caption.48}%
+\contentsline {table}{\numberline {4.7}{\ignorespaces 不同模型利用历史1个月泉流量预测2019年1月泉流量}}{61}{table.caption.49}%
+\addvspace {10.0pt}
+\contentsline {table}{\numberline {5.1}{\ignorespaces 1932年至2021年期间研究区域内7级以上的地震}}{66}{table.caption.52}%
+\contentsline {table}{\numberline {5.2}{\ignorespaces 基于地震目录的地震因子}}{69}{table.caption.55}%
+\contentsline {table}{\numberline {5.3}{\ignorespaces 每个时空窗口至少有30个地震数的时空窗口信息}}{71}{table.caption.57}%
+\contentsline {table}{\numberline {5.4}{\ignorespaces 不同模型基于区块1预测未来1年最大震级的拟合指标效果（数据集划分比例为0.8：0.2）}}{74}{table.caption.59}%
+\contentsline {table}{\numberline {5.5}{\ignorespaces 不同模型基于整个区块预测未来1年最大震级的拟合指标效果（数据集划分比例为0.8：0.2）}}{76}{table.caption.61}%
+\contentsline {table}{\numberline {5.6}{\ignorespaces 不同模型基于整个区块预测未来10年最大震级的拟合指标效果（数据集划分比例为0.8：0.2）}}{77}{table.caption.63}%
+\contentsline {table}{\numberline {5.7}{\ignorespaces 不同模型基于整个区块预测未来10年最大震级的拟合指标效果（数据集划分比例为0.85：0.15）}}{77}{table.caption.65}%
+\contentsline {table}{\numberline {5.8}{\ignorespaces 不同模型基于整个区块预测未来10年最大震级的拟合指标效果（数据集划分比例为0.9：0.1）}}{80}{table.caption.67}%
+\addvspace {10.0pt}
+\addvspace {10.0pt}
+\contentsline {table}{\numberline {A.1}{\ignorespaces 不同模型基于区块2至区块6预测未来1年最大震级的拟合指标效果（数据集划分比例为0.8：0.2）}}{90}{table.A.1}%
+\contentsline {table}{\numberline {A.1}{\ignorespaces 不同模型基于区块2至区块6预测未来1年最大震级的拟合指标效果（数据集划分比例为0.8：0.2）（续）}}{91}{table.A.1}%
+\addvspace {10.0pt}
+\addvspace {10.0pt}

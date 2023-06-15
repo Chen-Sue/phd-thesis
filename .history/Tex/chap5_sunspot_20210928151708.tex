@@ -1,0 +1,463 @@
+\chapter{神经网络预测太阳黑子}\label{chap:ann_sunspot}
+
+\section{引言}
+太阳是太阳系的中心，控制着太阳系的环境。太阳存在不同类型的活动方式，比如太阳黑子、太阳耀斑和日冕质量抛射等。太阳黑子是非常重要的研究对象，因为太阳黑子变化时刻影响着不仅影响着日光层环境，还影响着地球气候和温度。太阳黑子出现在太阳光球上的黑暗区域。太阳黑子可以成群出现，也可以是单个孤立的本影，周围有半影。本影是一个黑暗的中心区域，而半影是一个不太黑暗的区域。太阳黑子的产生是由于在太阳内部产生的强磁场~\citep{noyes2013sun}。太阳黑子是太阳活动现象过程中很容易观测到的特征之一。
+
+理解太阳活动如何随着时间的推移而改变一直是许多研究的重点。太阳黑子能够反应太阳活动的剧烈程度，通常数量越多，太阳活动水平越高；数量越少，太阳活动水平越低。目前，有关太阳黑子的记录可长达400多年，其时间序列数据显示出11年左右的周期性震荡。通过早期从预测结果中获得信息，有助于人类做出提前的准备，可以降低太阳黑子对地球和人类的影响。例如，保护人类缓解受自然灾害、通讯、太空活动等影响~\citet{jie2012prediction}。因此我们急切需要知道未来的太阳黑子变化，这有助于理解太阳活动的机制。
+
+由于太阳黑子的时间序列的非平稳性、非高斯性、非线性特征，预测太阳黑子变化始终是一个具有挑战性的课题。目前已经有一些研究利用年均或月均太阳黑子时间序列数据预测峰值。
+
+早期阶段，~\citet{hiremath2008prediction}预测过长时期（2008年至2176年）的太阳黑子变化，发现第24和25太阳周的太阳黑子数均为110左右。该结论与~\citet{podladchikova2017sunspot}和~\citet{singh2019prediction}很接近。
+
+有研究表明，第25太阳周有可能比预期的更强。也就是说，与第24太阳周相比，第25太阳周可能不会大幅减弱，甚至可能扭转太阳活动大幅减弱的趋势。~\citet{mcintosh2020overlapping}采用了磁活动周期的物理模型，预测第25太阳周是有史以来观察到的最强的太阳黑子周期之一，MSSN峰值振幅为233个太阳黑子。
+
+\begin{table}[!htbp]
+    \bicaption{第25太阳周预测最大黑子数。}{The maximum of sunspot number.}
+    \label{tab:sunspot_number_ref_list}
+    \centering
+    \footnotesize
+    \setlength{\tabcolsep}{5pt}
+    \renewcommand{\arraystretch}{1.2}
+    \begin{tabular}{lll}
+        \toprule
+        参考文献 & 第25太阳周最大黑子数 & 出现时期\\
+        \hline
+        ~\citet{mcintosh2020overlapping} & 233 &  \\
+        ~\citet{pesnell2018effects} & 180 &  \\
+        ~\citet{pala2019forecasting} & 167.3  & 2022年7月 \\
+        
+        ~\citet{rigozo2011prediction} & 132.1 & 2023年4月 \\
+        % ~\citet{bisoi2020another} & 131-134 &  \\
+        % ~\citet{bisoi2020another} & 134\pm 11 &  \\
+        
+        % ~\citet{pesnell2018early} & 135\pm 25 &  \\
+        ~\citet{sarp2018prediction} & 157\pm 12  &  2023.2\pm 1.1  \\
+        ~\citet{okoh2018hybrid} & 122.1\pm 18.2 & 2025年1月\pm 6个月 \\
+        ~\citet{pishkalo2008preliminary} &  112.3\pm 33.4 & 2023年4月至6月 \\
+        ~\citet{li2015predicting} & 109.1  & 2023年10月 \\
+        ~\citet{herrera2021does} & $95_{-15}^{+20}$ &  2024±1 \\
+        ~\citet{panigrahi2021forecasting} & 94.33 & 2026年4月 \\
+        ~\citet{attia2013neuro} & 90.7 & 2022年 \\
+        ~\citet{labonville2019dynamo} &  $89_{-14}^{+29}$ & $2025.3_{-1.05}^{+0.89}$ \\
+        ~\citet{sabarinath2018sunspot} & 75-95  &  \\
+        ~\citet{kitiashvili2020application} &  50 &  \\
+        
+        % ~\citet{bhowmik2018prediction} & 118 &  \\
+        % ~\citet{hiremath2008prediction} & 110  &  \\
+        % ~\citet{singh2019prediction} & 110 &  \\
+        % ~\citet{podladchikova2017sunspot} & 110  &  \\
+        % ~\citet{pishkalo2014prediction} & 105--110  &  \\
+        
+        
+        
+        \hline
+        参考文献 & 第25太阳周最大黑子面积 & 出现时期\\
+        \hline
+        ~\citep{li2021predicting} &  3115\pm 401 & 2022年10月\\
+        \hline
+    \end{tabular}
+\end{table}
+
+
+~\citet{pesnell2018effects}研究显示第25太阳周的太阳黑子数为180左右。~\citet{bisoi2020another}得出的范围为131-134。~\citet{bhowmik2018prediction}使用太阳表面通量传输模型和太阳内部动力模型，基于年均太阳黑子数数据集，得到第25太阳周的太阳黑子数在118左右，发生在2024年左右。这些作者认为，太阳活动中类似于Maunder最低点不会到来。
+
+更有甚者，~\citep{kitiashvili2020application}使用同步磁图发现第25太阳周的最大太阳黑子数为50左右（发生在2024年或2025年），该数值将甚至少于Dalton最低点期间的太阳黑子数量，可能与Maunder最低点相当。无论最终的模型的表现效果如何，目前没有一种方法能够准确提供对未来第25太阳轴活动的非线性动态的最佳预测。
+
+传统意义上，基于物理机制的预测模型（例如，前兆，动态模型，混沌理论（~\citep{jie2012prediction}）等）和统计预测模型（比如，自回归移动平均模型（autoregressive moving average，简称 ARIMA））已经被广泛应用于太阳黑子时间序列预测。然而，这些模型都有一个前提假设，时间序列是从线性过程产生的，从而难以有效地抓住非高斯性和非稳态性的时间序列的非线性关系~\citep{jiang2011sunspot,arlt2015solar}。
+
+为了提高预测精度，人工智能在天文和天体物理现象预测中的应用已迅速增加~\citep{pala2019forecasting,fluke2020surveying}，尤其是机器学习和深度学习，两者均可拟合非常复杂的函数。这里我们试图探索机器学习作为一种强大的工具的容错能力，目的是探索太阳黑子活动的复杂本质，同时提高理解磁特性和低太阳活动。
+
+~\citet{ren2014neural}基于神经网络预测太阳黑子变化。~\citet{ding2012prediction}使用BP神经网络预测月均太阳黑子面积。
+~\citet{zhao2008prediction}使用RBF神经网络预测月均太阳黑子数，但是预测误差会随着预测时间的延长而逐渐增加。~\citet{li2018hybrid}在预测太阳黑子序列过程中，对比了BP神经网络、FA（firefly algorithm）-BP神经网络、EMD（Empirical mode decomposition）-BP神经网络和VMD（Variational Mode Decomposition）-BP神经网络，发现组合的神经网络强于BP神经网络。人工神经网络固有的学习速度慢、容错性差、易陷入局部极小值等缺点，使得预测精度难以进一步提高。更智能的神经网络算法的提出使得这些缺陷得到了一定程度的缓解。~\citet{novitasari2019flare}预测太阳黑子数使用的是Fuzzy时间序列的马尔科夫链模型，预测精MAPE达9.5\%。~\citet{arfianti15sunspot}使用GUR神经网络预测未来一个月太阳黑子数，得到MAPE低于10\%。~\citet{suwanto2019prediksi}使用SVR得到的精度为35.32MSE，5.94RMSE。
+
+鉴于预测未来第25太阳周难以取得一致性，我们尝试预测未来一个月甚至一年的太阳黑子变化，试图在短期内得到最精确的预测值。
+
+\section{数据处理}
+
+本研究采用的时间序列数据集有两类。第一类为月平均太阳黑子数（Monthly Mean Total Sunspot Number, MSSN），来自SILSO（Sunspot Index and Long-Term Solar Observation）网站（WDC-SILSO, Royal Observatory of Belgium, Brussels, \href{http://sidc.be/silso/datafiles}{http://sidc.be/silso/datafiles}）发布的太阳黑子2.0版本。MSSN数据集跨越了273年（从1749年1月至2021年8月）, 包含3272条记录。太阳黑子数的数据样本被展现在表~\ref{tab:sunspot_number}中。第一太阳周为1755年2月至1766年5月，因此截至目前，MSSN数据集已经涵盖了24个太阳周, 目前正处于第25太阳周的起始阶段（\href{www://sidc.be/silso/cyclesmm}{www://sidc.be/silso/cyclesmm}）。图~\ref{fig:sunspot_area_series}使用了1749年至2021年间月平均太阳黑子数时间序列数据，绘制出太阳黑子数的变化趋势图，图1显示，MSSN数据集的分布均右偏的。Panigrahi等(2021)指出，MSSN数据集的峰度大于3。鉴于MSSN数据集均呈现复杂的非高斯型分布特征，因此较难预测出太阳黑子的变化趋势。
+
+\begin{table}[!htbp]
+    \bicaption{MSSN的数据样本。}{The Data Sample of MSSN.}
+    \label{tab:sunspot_number}
+    \centering
+    \footnotesize
+    \setlength{\tabcolsep}{4pt}
+    \renewcommand{\arraystretch}{1.2}
+    \begin{tabular}{lcc}
+        \hline
+        年 & 月 & 太阳黑子数\\
+        \hline
+        1749 & 1 & 96.7 \\
+        1749 & 2 & 104.3 \\
+        \ldots & \ldots & \ldots \\
+        2021 & 8 & 22.4 \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=\textwidth]{sunspot_area_series.png}
+    \bicaption{1949年至2021年月平均太阳黑子数的时间序列数据集。}{Monthly mean total sunspot number time series between 1749 and 2021.}
+    \label{fig:sunspot_area_series}
+\end{figure}
+
+第二类数据集为太阳黑子面积（Sunspot Area，SSA）。SSA数据集来自Lisa Upton和DavidHathaway提供的网站(\href{http://solarcyclescience.com/activeregions.html}{http://solarcyclescience.com/activeregions.html})，该数据集可用来预测太阳黑子面积和太阳黑子蝴蝶图。~\citet{hathaway2015solar}指出，SSA数据集也是一个好的长时间序列的太阳磁活动指标，跟MSSN数据集一样，同样也可以应用在预测太阳周期。SSA数据集跨越了272年（从1874年5月1日至2021年8月7日），包含247693条记录，因此数据集包含了13个完整的太阳周。同MSSN数据集相比，SSA数据集还涵盖了黑子发生的位置信息。因此SSA数据集在理解长期太阳磁活动和变化非常重要。如图~\ref{fig:sunspot_butterfly}所示，根据1874年至2021年间太阳黑子面积随着时间和纬度的变化，我们绘制出了蝴蝶图。在每个太阳周早期，太阳黑子出现在高纬度地区，然后向赤道方向移动。
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=\textwidth]{sunspot_butterfly.png}
+    \bicaption{1949年至2021年太阳黑子面积随着时间和纬度变化的蝴蝶图。}{Butterfly diagram of sunspot area, which marks the latitude of sunspot locations as a function of time between 1749 and 2021.}
+    \label{fig:sunspot_butterfly}
+\end{figure}
+
+为保持太阳黑子数和面积在时间上的一致性，将SSA数据集中的太阳黑子面积按月平均，得到MSSA（Monthly SSA）数据集（见表~\ref{tab:sunspot_area}）。将MSSN和MSSA两种时间序列数据集绘制在同一张图中，可显示太阳黑子数和太阳黑子面积之间的关系。如图~\ref{fig:sunspot_number_area}所示，我们截取了MSSA在1874年至2021年的种数据集，纵轴按照不同尺度标准绘制太阳黑子数和太阳黑子面积的变化趋势。在重叠的时间范围内，太阳黑子数和面积在太阳活动强度和发生时间上存在高度的关联性。
+
+\begin{table}[!htbp]
+    \bicaption{MSSA的数据样本。}{The Data Sample of MSSA.}
+    \label{tab:sunspot_area}
+    \centering
+    \footnotesize% fontsize
+    \setlength{\tabcolsep}{4pt}
+    \renewcommand{\arraystretch}{1.2}%
+    \begin{tabular}{lcc}
+        \hline
+        年 & 月 & 太阳黑子数\\
+        \hline
+        1874 & 5 & 270.87 \\
+        1874 & 6 & 346 \\
+        \ldots & \ldots & \ldots \\
+        2021 & 8 & 189.03 \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=\textwidth]{sunspot_number_area.png}
+    \bicaption{1874年至2021年间月平均的太阳黑子数和月平均太阳的黑子面积。}{Monthly mean sunspot numbers and monthly mean sunspot areas from 1874 to 2021.}
+    \label{fig:sunspot_number_area}
+\end{figure}
+
+通常预测太阳黑子变化的第一步就是收集数据集。下一步就是对数据使用窗口滑动法，得到输入和输出数据。紧接着，对输入和输出数据分别进行归一化处理。归一化的数据需要进行划分，得到训练数据集对和测试数据集对。在整个训练过程中，Adam始终作为优化器，以便更快获取全局最小值。产生的最佳模型一般是由训练集训练得到，而测试数用来测试模型的性能。
+
+\section{试验结果与分析}
+
+本研究用Tensorflow 2.0开源库作为开发模型，采用LSTM-RNN、1DCNN以及由LSTM神经元和卷积层组合的神经网络，并用Adam作为优化器，采用MSE作为损失函数，模型一共训练1000个周期。
+
+结合滑动窗口法，对比单变量和多变量的单步长方案，分别使用MSE和RMSE说明。
+
+\subsection{预测未来太阳黑子数}\label{subsec:预测未来太阳黑子数}
+
+经常，神经网络需要在一个完整的数据集上被训练，目的是查看历史观测数据的偏差。然而，判断模型的性能是十分困难的，因为数据量非常少。我们将数据集划分为训练集和验证集两部分，选择具备最佳验证性能的模型来进行预测。
+
+首先，对比了不同模型和不同输入节点数预测未来一个月MSSN的预测效果，模型包括LSTM-RNN、1DCNN以及LSTM+1DCNN。表~\ref{tab:sunspot_number_input_month}展示了不同模型和不同输入节点数预测未来一个月MSSN的MSE和RMSE。从表~\ref{tab:sunspot_number_input_month}可以看出，输入节点数逐渐增加时，RMSE值先下降后上升，输入节点数在132或256时，达到最优。
+
+\begin{table}[!htbp]
+    \bicaption{不同模型和不同输入节点数预测未来一个月MSSN的拟合指标效果。}{ The metrics for predicting MSSN in the next month by different models and input nodes.}
+    \label{tab:sunspot_number_input_month}
+    \centering
+    \footnotesize
+    \setlength{\tabcolsep}{5.8pt}
+    \renewcommand{\arraystretch}{1}
+    \begin{tabular}{lclllll}
+        \toprule
+         \multirow{2}{*}{模型} & \multirow{2}{*}{输入节点数} & \multirow{2}{*}{节点数/过滤器数} & \multicolumn{2}{c}{训练集} & \multicolumn{2}{c}{验证集}\\
+        \cmidrule(lr){4-5}\cmidrule(lr){6-7} \noalign{\smallskip}
+         & & & MSE & RMSE & MSE & RMSE\\
+        \midrule
+        LSTM & 1 & 128(LSTM)-64(LSTM)-32(LSTM)-1(FC) & 0.0047 & 0.0683 & 0.0037 & 0.0609 \\
+        & 12 & & 0.0037 & 0.0607 & 0.0034 & 0.0580 \\
+        & 72 & & 0.0025 & 0.0501 & 0.0034 & 0.0586 \\
+        & 132 & & 0.0026 & 0.0507 & 0.0037 & 0.0607 \\
+        & 264 & & 0.0024 & 0.0493 & 0.0034 & 0.0585 \\
+        & 396 & & 0.0042 & 0.0645 & 0.0066 & 0.0810 \\
+        & 528 & & 0.0038 & 0.0617 & 0.0617 & 0.0103 \\
+        \hline
+        CNN & 72 & 128(Conv)-64(Conv)-32(Conv)-1(FC) & 0.0040 & 0.0633 & 0.0056 & 0.0750 \\
+        & 132 & & 0.0035 & 0.0594 & 0.0061 & 0.0783 \\
+        & 264 & & 0.0037 & 0.0609 & 0.0050 & 0.0706 \\
+        & 396 & & 0.0034 & 0.0584 & 0.0088 & 0.0938 \\
+        & 528 & & 0.0027 & 0.0524 & 0.0117 & 0.1081 \\
+        \hline
+        LSTM+CNN & 1 & 256(LSTM)-128(LSTM)-64(Conv)-1(FC) & 0.0047 & 0.0683 & 0.0037 & 0.0609 \\
+        & 12 & & 0.0038 & 0.0614 & 0.0032 & 0.0568 \\
+        & 72 & & 0.0025 & 0.0499 & 0.0035 & 0.0590 \\
+        & 132 & & 0.0028 & 0.0531 & 0.0034 & 0.0583 \\
+        & 264 & & 0.0027 & 0.0519 & 0.0035 & 0.0589 \\
+        & 396 & & 0.0037 & 0.0607 & 0.0060 & 0.0772 \\
+        & 528 & & 0.0042 & 0.0647 & 0.0082 & 0.0905 \\
+        & 72 & 256(Conv)-128(Conv)-64(LSTM)-1(FC) & 0.0037 & 0.0610 & 0.0042 & 0.0648 \\
+        & 132 & & 0.0031 & 0.0554 & 0.0050 & 0.0708 \\
+        & 264 & & 0.0035 & 0.0592 & 0.0042 & 0.0649 \\
+        & 396 & & 0.0034 & 0.0583 & 0.0079 & 0.0889 \\
+        & 528 & & 0.0069 & 0.0830 & 0.0116 & 0.1079 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\begin{figure}[!htbp]
+\center
+    \begin{overpic}[width=1\textwidth]{ssn_lstm_in132_out1_layer4_layer_size256}\put(0,35){(a)}\label{fig:ssn_lstm_in132_out1_layer4_layer_size256}\end{overpic}    \\
+    \begin{overpic}[width=1\textwidth]{ssn_cnn_in132_out1_layer4_layer_size256}\put(0,35){(b)}\label{fig:ssn_cnn_in132_out1_layer4_layer_size256}\end{overpic}    \\
+    \begin{overpic}[width=1\textwidth]{ssn_lstm_cnn_in132_out1_layer4_layer_size256}\put(0,35){(c)}\label{fig:ssn_lstm_cnn_in132_out1_layer4_layer_size256}\end{overpic}
+    \bicaption{利用输入节点数为132的不同模型预测MSSN数据集。(a) LSTM-RNN，(b)1D-CNN，(c)LSTM+1DConv。(观测数据集：灰色；预测的训练集：蓝色；预测的验证集：紫色；预测的测试集：红色。)}{The time series for predicting MSSN dataset using the different models with 132 input nodes. (a) LSTM-RNN, (b)1D-CNN, (c)LSTM+1DConv. (observed dataset: grey, predicted train dataset: blue, predicted validation dataset: purple, predicted test dataset: red).}
+    \label{fig:ssn_in132_out1_layer4_layer_size256}
+\end{figure}
+
+\begin{figure}[!htbp]
+\center
+    \begin{overpic}[width=1\textwidth]{ssn_lstm_in264_out1_layer4_layer_size256}\put(0,35){(a)}\label{fig:ssn_lstm_in264_out1_layer4_layer_size256}\end{overpic}    \\
+    \begin{overpic}[width=1\textwidth]{ssn_cnn_in264_out1_layer4_layer_size256}\put(0,35){(b)}\label{fig:ssn_cnn_in264_out1_layer4_layer_size256}\end{overpic}    \\
+    \begin{overpic}[width=1\textwidth]{ssn_lstm_cnn_in264_out1_layer4_layer_size256}\put(0,35){(c)}\label{fig:ssn_lstm_cnn_in264_out1_layer4_layer_size256}\end{overpic}
+    \bicaption{利用输入节点数为264的不同模型预测MSSN数据集。(a) LSTM-RNN，(b)1D-CNN，(c)LSTM+1DConv。(观测数据集：灰色；预测的训练集：蓝色；预测的验证集：紫色；预测的测试集：红色。)}{The time series for predicting MSSN dataset using the different models with 264 input nodes. (a) LSTM-RNN, (b)1D-CNN, (c)LSTM+1DConv. (observed dataset: grey, predicted train dataset: blue, predicted validation dataset: purple, predicted test dataset: red).}
+    \label{fig:ssn_in264_out1_layer4_layer_size256}
+\end{figure}
+
+
+对比图~\ref{fig:ssn_in132_out1_layer4_layer_size256}和~\ref{fig:ssn_in264_out1_layer4_layer_size256}，可以看出，在输出节点为1（即预测未来一个月MSSN），输入节点为132或264时，模型LSTM-RNN、1DCNN以及LSTM+1DCNN表现都很好，效果基本相当。因为数据量的局限性，因此我们为了在训练样本中多增加一些数据，以下试验全部采用输入节点数为132（即输入1个太阳周）分析模型。
+
+
+% layer = 4
+% layer_size = 256 
+
+\begin{table}[!htbp]
+    \bicaption{132个输入节点数、不同输出节点数和模型预测未来一个月MSSN的拟合指标效果。}{The metrics for predicting MSSN by 132 inputs different models and outputs.}
+    \label{tab:sunspot_number_output_month}
+    \centering
+    \footnotesize
+    \setlength{\tabcolsep}{5pt}
+    \renewcommand{\arraystretch}{1}
+    \resizebox{\textwidth}{!}{\begin{tabular}{lllllll}
+        \toprule
+         \multirow{2}*{模型} &
+         \multirow{2}*{\makecell[{l}{p{3cm}}]{输入/隐藏层节点\\数/过滤器数}} &\multirow{2}*{输出节点数} & \multicolumn{2}{c}{训练集} & \multicolumn{2}{c}{验证集}\\
+        \cmidrule(lr){4-5}\cmidrule(lr){6-7} \noalign{\smallskip}
+         &  & & MSE & RMSE & MSE & RMSE\\
+        \midrule
+        LSTM & 128(LSTM)-64(LSTM)-32(LSTM) & 1 & 0.0026 & 0.0507 & 0.0037 & 0.0607 \\
+        & 2 & & 0.0246 & 0.1566 & 0.0294 & 0.1719  \\
+        & 3 & & 0.0242 & 0.1555 & 0.0289 & 0.1706 \\
+        & 6 & & 0.0242 & 0.1554 & 0.0295 & 0.1724 \\
+        & 12 & & 0.0400 & 0.1997 & 0.0439 & 0.2105 \\
+        & 72 & & 0.0302 & 0.1740 & 0.0357 & 0.1896 \\
+        & 132 & & 0.0315 & 0.1773 & 0.0371 & 0.1933 \\
+        \hline
+        CNN & 128(Conv)-64(Conv)-32(Conv) & 1 & 0.0035 & 0.0594 & 0.0061 & 0.0783 \\
+        & & 2 & 0.0051 & 0.0715 & 0.0052 & 0.0721 \\
+        & & 3 & 0.0048 & 0.0695 & 0.0053 & 0.0728  \\
+        & & 6 & 0.0055 & 0.0739 & 0.0059 & 0.0770 \\
+        & & 12 & 0.0062 & 0.0787 & 0.0065 & 0.0809 \\
+        & & 72 & 0.0174 & 0.1320 & 0.0173 & 0.1316 \\
+        & & 132 & 0.0112 & 0.1059 & 0.0222 & 0.1491 \\
+        \hline
+        LSTM+CNN & 256(LSTM)-128(LSTM)-64(Conv) & 1 & 0.0028 & 0.0531 & 0.0034 & 0.0583 \\
+        & & 2 & 0.0031 & 0.0554 & 0.0041 & 0.0637 \\
+        & & 3 & 0.0035 & 0.0589 & 0.0041 & 0.0644 \\
+        & & 6 & 0.0043 & 0.0658 & 0.0045 & 0.0668 \\
+        & & 12 & 0.0038 & 0.0620 & 0.0050 & 0.0709 \\
+        & & 72 & 0.0112 & 0.1058 & 0.0162 & 0.1273 \\
+        & & 132 & 0.0180 & 0.1341 & 0.0196 & 0.1400 \\
+        & 256(Conv)-128(Conv)-64(LSTM) & 1 & 0.0031 & 0.0554 & 0.0050 & 0.0708 \\
+        & & 2 & 0.0035 & 0.0595 & 0.0046 & 0.0679 \\
+        & & 3 & 0.0044 & 0.0664 & 0.0054 & 0.0734 \\
+        & & 6 & 0.0042 & 0.0650 & 0.0049 & 0.0702 \\
+        & & 12 & 0.0036 & 0.0598 & 0.0061 & 0.0782 \\
+        & & 72 & 0.0073 & 0.0853 & 0.0169 & 0.1300 \\
+        & & 132 & 0.0105 & 0.1026 & 0.0168 & 0.1295 \\
+        \bottomrule
+    \end{tabular}}
+\end{table}
+
+从表~\ref{tab:sunspot_number_output_month}可以看出，只有输出节点数为1时，LSTM-RNN才能拟合好MSSN时间序列数据。幸运的是，在输出节点为1、2、3、6、12、72、132时，1DCNN和LSTM+1DCNN均显示了强大的拟合能力。研究展示，随着输出节点数的增加，模型的拟合性能呈现下降趋势。因预测未来12个月的MSSN与预测未来一个月的MSSN效果相差不大，因此我们绘制出预测未来1年的MSSN（见图~\ref{fig:ssn_in132_out12_layer4_layer_size256}）。
+
+\begin{figure}[!htbp]
+\center
+\begin{overpic}[width=0.98\textwidth]{ssn_cnn_in132_out12_layer4_layer_size256}\put(0,35){(a)}\label{fig:ssn_cnn_in132_out12_layer4_layer_size256}\end{overpic}    \\
+\begin{overpic}[width=0.98\textwidth]{ssn_lstm_cnn_in132_out12_layer4_layer_size256}\put(0,35){(b)}\label{fig:ssn_lstm_cnn_in132_out12_layer4_layer_size256}\end{overpic}
+\bicaption{利用输入节点数为132、输出节点数为12的不同模型预测MSSN数据集。(a)1D-CNN，(b)LSTM+1DConv。(观测数据集：灰色；预测的训练集：蓝色；预测的验证集：紫色；预测的测试集：红色。)}{The time series for predicting MSSN dataset using the different models with 132 input nodes and 12 output nodes. (a) 1D-CNN, (b)LSTM+1DConv. (observed dataset: grey, predicted train dataset: blue, predicted validation dataset: purple, predicted test dataset: red).}
+\label{fig:ssn_in132_out12_layer4_layer_size256}
+\end{figure}
+
+尽管未来一个太阳周的1DCNN和LSTM+1DCNN的性能不如预测未来一个月MSSN的性能好，但RMSE值在合理的范围内，因此，这里我们绘制预测一个太阳周的预测图。为了使图~\ref{fig:ssn_in132_out132_layer4_layer_size256}展示更加清晰，我们绘制出了未来第一个月和第132个月的MSSN。第25太阳周，利用1DCNN预测的最大MSSN为157.80（发生在2025年1月），利用LSTM+1DCNN预测的最大MSSN为149.22（发生在2025年3月）。对黑子数而言，第23太阳周最大 MSSN出现在2001年9月，其值为238.2；第24太阳周最大MSSN出现在2014年2月，其值为146.1。因此，我们的研究结果显示，第25太阳周的峰值跟第24太阳周基本持平。 
+
+\begin{figure}[!htbp]
+\center
+    \begin{overpic}[width=1\textwidth]{ssn_cnn_in132_out132_layer4_layer_size256}\put(0,35){(a)}\end{overpic}    \\
+    \begin{overpic}[width=1\textwidth]{ssn_lstm_cnn_in132_out132_layer4_layer_size256}\put(0,35){(b)}\end{overpic}
+    \bicaption{利用输入节点数为132、输出节点数为132的不同模型预测MSSN数据集。(a) 1D-CNN，(b)LSTM+1DConv。(观测数据集：灰色；预测的训练集：蓝色；预测的验证集：紫色；预测的测试集：红色。)}{The time series for predicting MSSN dataset using the different models with 132 input nodes and 132 output nodes. (a) 1D-CNN, (b)LSTM+1DConv. (observed dataset: grey, predicted train dataset: blue, predicted validation dataset: purple, predicted test dataset: red).}
+    \label{fig:ssn_in132_out132_layer4_layer_size256}
+\end{figure}
+
+以上研究采用的均是四层的神经网络，这里改变神经网络的层数以及隐藏的节点数，查看哪种网络结构能够使模型达到最优。表~\ref{tab:sunspot_number_output_year}展示了三类不同模型（LSTM-RNN、1DCNN以及LSTM+1DCNN）在层数和节点数不同的情况下，各自拟合指标的效果。从表中可以看出，并不是网络层数越多，拟合效果越好。对于LSTM-RNN而言，两层的结构就比更深层的LSTM-RNN更好。尽管如此，LSTM-RNN在输入节点数为12时，拟合效果欠佳。而1DCNN网络在两层时，同样比深层的1DCNN网络性能更好。而对于LSTM+1DCNN而言，也是浅层网络表现更好，而且略优于1DCNN。
+
+\begin{table}[!htbp]
+    \bicaption{不同模型（层数和隐藏层个数）预测未来一年MSSN的拟合指标效果。}{ The metrics for predicting MSSN by different models and output nodes.}
+    \label{tab:sunspot_number_output_year}
+    \centering
+    \footnotesize
+    \setlength{\tabcolsep}{5.2pt}
+    \renewcommand{\arraystretch}{1}
+    \resizebox{\textwidth}{!}{
+    \begin{tabular}{lclllll} 
+        \toprule
+         \multirow{2}*{模型} & \multirow{2}*{层数} & \multirow{2}*{节点数/过滤器个数} & \multicolumn{2}{c}{训练集} & \multicolumn{2}{c}{验证集}\\
+        \cmidrule(lr){4-5}\cmidrule(lr){6-7} \noalign{\smallskip}
+         & & & MSE & RMSE & MSE & RMSE\\
+        \midrule
+        LSTM & 2 & 128(LSTM)-12(FC) & 0.0232 & 0.1522 & 0.0277 & 0.1669 \\
+        & 3 & 128(LSTM)-64(LSTM)-12(FC) & 0.0282 & 0.1678 & 0.0333 & 0.1832 \\
+        & 4 & 128(LSTM)-64(LSTM)-32(LSTM)-12(FC) & 0.0400 & 0.1997 & 0.0439 & 0.2105 \\
+        & 5 & 128(LSTM)-64(LSTM)-32(LSTM)-16(LSTM)-12(FC) & 0.0248 & 0.1575 & 0.0301 & 0.1741 \\
+        \hline
+        CNN & 2 & 128(Conv)-12(FC) & 0.0070 & 0.0838 & 0.0063 & 0.0796 \\
+        & 3 & 128(Conv)-64(Conv)-12(FC) & 0.0113 & 0.1062 & 0.0113 & 0.1064 \\
+        & 4 & 128(Conv)-64(Conv)-32(Conv)-12(FC) & 0.0062 & 0.0787 & 0.0065 & 0.0809 \\
+        & 5 & 128(Conv)-64(Conv)-32(Conv)-16(Conv)-12(FC) & 0.0046 & 0.0680 & 0.0070 & 0.0838 \\
+        \hline
+        LSTM+CNN & 3 & 128(LSTM)-64(Conv)-12(FC) & 0.0037 & 0.0608 & 0.0049 & 0.0697 \\
+        & 3 & 128(Conv)-64(LSTM)-12(FC) & 0.0041 & 0.0643 & 0.0048 & 0.0696 \\
+        & 4 & 128(LSTM)-64(LSTM)-32(Conv)-12(FC) & 0.0038 & 0.0620 & 0.0050 & 0.0709 \\
+        & 4 & 128(LSTM)-64(Conv)-32(Conv)-12(FC) & 0.0036 & 0.0604 & 0.0053 & 0.0727 \\
+        & 4 & 128(Conv)-64(Conv)-32(LSTM)-12(FC) & 0.0036 & 0.0598 & 0.0061 & 0.0782 \\
+        & 4 & 128(Conv)-64(LSTM)-32(LSTM)-12(FC) & 0.0050 & 0.0704 & 0.0044 & 0.0662 \\ 
+        & 5 & 128(LSTM)-64(LSTM)-32(LSTM)-16(Conv)-12(FC) & 0.0100 & 0.1002 & 0.0104 & 0.1021 \\
+        & 5 & 128(LSTM)-64(LSTM)-32(Conv)-16(Conv)-12(FC) & 0.0099 & 0.0994 & 0.0111 & 0.1054 \\
+        & 5 & 128(LSTM)-64(Conv)-32(Conv)-16(Conv)-12(FC) & 0.0090 & 0.0950 & 0.0113 & 0.1062 \\
+        \bottomrule
+    \end{tabular}}
+\end{table}
+
+
+
+\subsection{预测未来太阳黑子面积}
+根据章节~\ref{subsec:预测未来太阳黑子数}，得知输入节点数为132或者256时，模型能取得最佳性能。输出节点数越大，则模型性能表现越差。经过研究发现，1DCNN、LSTM+1DCNN均能较为准确得预测出预测未来一年的最大太阳黑子数。为了避免试验重复，这里我们采取输入时间序列长度为132，输出序列长度为12（未来一年太阳黑子面积）或132（未来一个太阳周）的太阳黑子面积。章节~\ref{subsec:预测未来太阳黑子数}还提示我们，神经网络层数不是越深，拟合效果越好。因此，我们这里试验三种类型的神经网络（LSTM、1DCNN、LSTM+1DCNN），采取三层或四层的网络进行分析。
+
+\begin{table}[!htbp]
+    \bicaption{不同模型（层数和隐藏层个数）预测未来一年MSSA的拟合指标效果。}{The metrics for predicting the next year MSSN by different models and output nodes.}
+    \label{tab:sunspot_area_output_year}
+    \centering
+    \footnotesize
+    \setlength{\tabcolsep}{5.2pt}
+    \renewcommand{\arraystretch}{1}
+    \resizebox{\textwidth}{!}{
+    \begin{tabular}{lclllll} 
+        \toprule
+         \multirow{2}*{模型} & \multirow{2}*{层数} & \multirow{2}*{节点数/过滤器个数} & \multicolumn{2}{c}{训练集} & \multicolumn{2}{c}{验证集}\\
+        \cmidrule(lr){4-5}\cmidrule(lr){6-7} \noalign{\smallskip}
+         & & & MSE & RMSE & MSE & RMSE\\
+        \midrule
+        LSTM & 2 & 256(LSTM)-12(FC) &0.0241 & 0.1557 & 0.0094 & 0.0974 \\
+        & 3 & 256(LSTM)-128(LSTM)-12(FC) & 0.0241 & 0.1557 & 0.0113 & 0.1066 \\
+        & 4 & 256(LSTM)-128(LSTM)-64(LSTM)-12(FC) 0.0244 & 0.1565 & 0.0109 & 0.1044 \\
+        \hline
+        CNN & 2 & 256(Conv)-12(FC) & 0.0098 & 0.0991 & 0.0038 & 0.0613 \\
+        & 3 & 256(Conv)-128(Conv)-12(FC) & 0.0174 & 0.1319 & 0.0067 & 0.0820 \\
+        & 4 & 256(Conv)-128(Conv)-64(Conv)-12(FC) & 0.0069 & 0.0830 & 0.0064 & 0.0801 \\
+        \hline
+        LSTM+CNN & 3 & 256(LSTM)-128(Conv)-12(FC) & 0.0040 & 0.0632 & 0.0032 & 0.0566 \\
+        & 4 & 256(LSTM)-128(LSTM)-64(Conv)-12(FC) & 0.0050 & 0.0704 & 0.0029 & 0.0536 \\
+        & 4 & 256(LSTM)-128(Conv)-64(Conv)-12(FC) & 0.0037 & 0.0612 & 0.0040 & 0.0631 \\
+        & 3 & 256(Conv)-128(LSTM)-12(FC) & 0.0049 & 0.0698 & 0.0031 & 0.0561 \\
+        & 4 & 256(Conv)-128(LSTM)-64(LSTM)-12(FC) & 0.0066 & 0.0811 & 0.0029 & 0.0543 \\
+        & 4 & 256(Conv)-128(Conv)-64(LSTM)-12(FC) & 0.0063 & 0.0793 & 0.0034 & 0.0582 \\
+        \bottomrule
+    \end{tabular}}
+\end{table}
+
+
+\begin{figure}[!htbp]
+\center
+    \begin{overpic}[width=1\textwidth]{ssa_lstm_in132_out12_layer2_layer_size256}\put(0,35){(a)}\end{overpic}    \\
+    \begin{overpic}[width=1\textwidth]{ssa_cnn_in132_out12_layer2_layer_size256}\put(0,35){(b)}\end{overpic} \\
+    \begin{overpic}[width=1\textwidth]{ssa_lstm_cnn_in132_out12_layer4_layer_size256}\put(0,35){(c)}\end{overpic} 
+    \bicaption{利用输入节点数为132、输出节点数为12的不同模型预测MSSA数据集。(a)LSTM-RNN，(b) 1D-CNN，(c)LSTM+1DConv。(观测数据集：灰色；预测的训练集：蓝色；预测的验证集：紫色；预测的测试集：红色。)}{The time series for predicting MSSA dataset using the different models with 132 input nodes and 132 output nodes. (a)LSTM-RNN, (b)1D-CNN, (c)LSTM+1DConv. (observed dataset: grey, predicted train dataset: blue, predicted validation dataset: purple, predicted test dataset: red).}
+    \label{fig:ssa_in132_out12_layer_size256}
+\end{figure}
+
+表~\ref{tab:sunspot_area_output_year}展示了不同模型（层数和隐藏层个数）预测未来一年MSSA的拟合指标效果。图~\ref{fig:ssa_in132_out12_layer_size256}则展示了预测未来一年MSSA，预测的和观测的MSSA。从表~\ref{tab:sunspot_area_output_year}和图~\ref{fig:ssa_in132_out12_layer_size256}可以看出，LSTM-RNN仍无法很好地拟合未来一年MSSA。对比1DCNN和LSTM+1DCNN，我们发现LSTM+1DCNN的性能明显优于1DCNN，因为LSTM+1DCNN不仅能够更精确地预测出第24太阳周的峰值，对于第24太阳周的持续时间预测也更加精确。
+
+鉴于LSTM-RNN预测未来1年的MSSA没能有很好的拟合能力，这里我们不考虑使用于LSTM-RNN预测未来1个太阳周的MSSA。尽管未来一个太阳周的1DCNN和LSTM+1DCNN的性能不如预测未来一个月MSSN的性能好，但RMSE值在合理的范围内，因此，这里我们绘制预测一个太阳周的预测图。为了使图~\ref{fig:ssa_in132_out132_layer_size256}展示更加清晰，我们绘制出了未来第一个月和第132个月的MSSA。第25太阳周，利用1DCNN预测的最大MSSA为1861.14（发生在2023年6月），利用LSTM+1DCNN预测的最大MSSA为1496.42（发生在2023年3月）。对黑子面积而言，第23太阳周最大 MSSA出现在2001年9月，其值为 2171.7；第24太阳周最大MSSA出现在2014年2月，其值为 1439.82。因此，我们的研究结果显示，第25太阳周的峰值跟第24太阳周基本持平。 
+
+\begin{table}[!htbp]
+    \bicaption{不同模型（层数和隐藏层个数）预测未来一个太阳周MSSA的拟合指标效果。}{The metrics for predicting the next year MSSN by different models and output nodes.}
+    \label{tab:sunspot_area_output_cycle}
+    \centering
+    \footnotesize
+    \setlength{\tabcolsep}{5.2pt}
+    \renewcommand{\arraystretch}{1}
+    \resizebox{\textwidth}{!}{
+    \begin{tabular}{lclllll} 
+        \toprule
+         \multirow{2}*{模型} & \multirow{2}*{层数} & \multirow{2}*{节点数/过滤器个数} & \multicolumn{2}{c}{训练集} & \multicolumn{2}{c}{验证集}\\
+        \cmidrule(lr){4-5}\cmidrule(lr){6-7} \noalign{\smallskip}
+         & & & MSE & RMSE & MSE & RMSE\\
+        \midrule
+        CNN & 2 & 256(Conv)-132(FC) & 0.0156 & 0.1249 & 0.0098 & 0.0991 \\
+        & 3 & 256(Conv)-128(Conv)-132(FC) & 0.0155 & 0.1246 & 0.0123 & 0.1110 \\
+        & 4 & 256(Conv)-128(Conv)-64(Conv)-132(FC) & 0.0120 & 0.1093 & 0.0095 & 0.0973 \\
+        \hline
+        LSTM+CNN & 3 & 256(LSTM)-128(Conv)-132(FC) & 0.0166 & 0.1288 & 0.0111 & 0.1054 \\
+        & 4 & 256(LSTM)-128(LSTM)-64(Conv)-132(FC) & 0.0155 & 0.1246 & 0.0122 & 0.1104 \\
+        & 4 & 256(LSTM)-128(Conv)-64(Conv)-132(FC) & 0.0184 & 0.1358 & 0.0159 & 0.1263 \\
+        & 3 & 256(Conv)-128(LSTM)-132(FC) & 0.0100 & 0.1001 & 0.0141 & 0.1188 \\
+        & 4 & 256(Conv)-128(Conv)-64(LSTM)-132(FC) & 0.0098 & 0.0990 & 0.0149 & 0.1222 \\
+        \bottomrule
+    \end{tabular}}
+\end{table}
+
+\begin{figure}[!htbp]
+\center
+    \begin{overpic}[width=1\textwidth]{ssa_cnn_in132_out132_layer4_layer_size256}\put(0,35){(a)}\end{overpic} \\
+    \begin{overpic}[width=1\textwidth]{ssa_lstm_cnn_in132_out132_layer3_layer_size256}\put(0,35){(b)}\end{overpic} 
+    \bicaption{利用输入节点数为132、输出节点数为132的不同模型预测MSSA数据集。(a)1D-CNN，(b)LSTM+1DConv。(观测数据集：灰色；预测的训练集：蓝色；预测的验证集：紫色；预测的测试集：红色。)}{The time series for predicting MSSA dataset using the different models with 132 input nodes and 132 output nodes. (a)1D-CNN, (b)LSTM+1DConv. (observed dataset: grey, predicted train dataset: blue, predicted validation dataset: purple, predicted test dataset: red).}
+    \label{fig:ssa_in132_out132_layer_size256}
+\end{figure}
+
+\subsection{与其他研究的比较}
+很多研究中已经研究了即将到来的第25太阳周的太阳黑子变化，采取了不同的方法，他们的结果非常不同，其原因可能是太阳黑子本身具备极其复杂的易变性。表~\ref{tab:sunspot_number_different_studies}列出来部分早期关于第25太阳周的研究。例如，\citet{covas2019neural}预测第25太阳周可能是有史以来太阳黑子数最低的时期，使用的是时空特性的神经网络，预测峰值出现的时间为2022年至2023年。与本研究结果类似，\citet{okoh2018hybrid}利用多维混合模型估计MSSN，得到第25太阳周的峰值为122.1（\pm 18.2），达到时间为2025年1月（\pm 6个月）。导致做出的结果差异，可能的原因还有数据集长度的差异，预处理的差异，以及选择模型的差异。
+
+
+\begin{table}[!htbp]
+\bicaption{不同研究给出的预测第25太阳周的太阳黑子。}{The different studies for predicting MSSN.}
+\label{tab:sunspot_number_different_studies}
+\centering
+\footnotesize
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{llll}
+    \toprule 
+    方法 & 相比第24太阳周 & 峰值达到时间 & 参考文献  \\
+    \midrule
+    1DCNN或LSTM+1DCNN & 基本相等 & 2025年1月-3月 & 本研究 \\
+    LSTM-RNN & 55\% 更强 & 2022年10月 & \citet{li2021predicting} \\
+    前向传播神经网络 & 更弱 & 2022年至2023年左右 & \citet{covas2019neural} \\
+    多维混合神经网络 & 基本相等 & 2025年1月（\pm 6个月）& \citet{okoh2018hybrid} \\
+    光谱小波分解树 & 17\% 更强 & 2023年4月 & \citet{rigozo2011prediction} \\
+    相似周期方法 & 30\% 更强 & 2024年10月& \citet{du2020solar} \\
+    光谱分量外推法 & 29\% 更强 & 2022年至2023年之间 & \citet{kane2007solar}\\
+    线性回归 & 10\%更强 & 2023年9月 & \citet{dani2019prediction}\\
+    \bottomrule
+\end{tabular}
+\end{table}
+
+\section{讨论与总结}
+
+MSSN和MSSA时间序列数据集可以被归类为非稳态的。其中所包含的随机的分量使得太阳黑子在长时间预测尺度上不太可靠。由于具有非线性效应的随机波动，难以对未来几个周期进行准确预测~\citep{charbonneau2010dynamo,petrovay2010solar}。
+
+~\citet{solanki2011analyzing}指出不同的关于长期预测太阳黑子变化研究得出的结论差异较大，这主要是因为太阳黑子变化具有非常复杂的非线性特征。 ~\citet{charbonneau2010dynamo}认为，用于研究无法通过观察数据理解的物理系统的数学模型，不应上升为 "物理现实主义"，因为模型难以反应现实。相较之下，太阳黑子活动起源于一定范围内的周期过程，而不是随机或间歇性过程~\citep{mendoza2011mid}。
+
+截至目前，太阳黑子预测最大的挑战是预测下一个周期的最大振幅和持续时间~\citep{petrovay2010solar}。~\citet{herrera2015reconstruction}假设太阳黑子每个周期存在一个固定的能量和给定频率（即太阳黑子活动周期在8年至14年之间），则太阳黑子估计模型的准确度会受到不确定原则的限制。因此，准确预测太阳黑子的任何参数（相位、振幅和周期）都十分困难。
+
+\citet{gleissberg1939long}曾指出太阳黑子周期的波动不够规则，在获取响应的表达函数时相当困难。不仅未来太阳周期的特性难以预测，而且准确预知太阳黑子数也几乎不可能。因此，太阳黑子周期预测的问题可以被视作一个概率问题。这也是太阳周期预测中经常会出现太阳黑子周期的预测概率。~\citet{camporeale2019challenge}建议在空间天文研究中需要改变预测模式，从点预测到具有可靠不确定性的概率方法。
+
+找到并确认太阳周期磁力是预测第25太阳周的必要条件。太阳周期的振幅将取决于其在震荡阶段的位置变化。基于这一模式，理论上可以定性预测第25太阳周的最大振幅。然而，不同的物理模型和数值模型对于预测未来太阳周最大振幅还存在较大差异。根据120年太阳磁力模式的负向，第24太阳周可以归类为中度或较低的太阳活动。
+
+本研究中，我们使用了LSTM-RNN、1DCNN以及两者的组合网络预测未来太阳黑子变化，采取的数据集是MSSN。第25太阳周，利用1DCNN预测的最大MSSN为157.80（发生在2025年1月），利用LSTM+1DCNN预测的最大MSSN为149.22（发生在2025年3月）。我们的预测结果与\citet{covas2019neural}的研究结果不仅在黑子强度上类似，而且在发生时间上也吻合。
+
+另外，图~\ref{fig:ssn_in132_out132_layer4_layer_size256}中，可以看出，不管是训练集、验证集，还是测试集，从完整的周期的角度看，每个周期均具有一定程度的双峰结构。最大振幅处呈现出水平变化，说明训练过的模型确实学到了双峰的特征。
+
+当然本方法在太阳黑子预测上也存在局限性。从上面讨论可以看出，输入序列长度和输出序列长度直接决定了模型的构建，对预测结果有非常大的影响，这使得输入和输出序列长度成为好模型构建的一项前提条件。在前面分析过程中，输出长度越长，结果越不可靠。如果要提供非常准确的预报，可以将预报时长设置为1年，每隔一段时间更新模型，重新预测下一年的太阳黑子变化，这样也能为未来一年做准备。
+
+除了时长的限制，第24太阳周的峰值和持续时间也发生了突变，这种突变会影响测试集的性能。图~\ref{fig:ssn_in132_out132_layer4_layer_size256}(a)中，虽然1DCNN能够学习到第24太阳周的峰值，也能较好地拟合出双峰特征，但对于第24太阳周的持续时间，却做出了提前的预测。图~\ref{fig:ssn_in132_out132_layer4_layer_size256}(b)中，虽然LSTM+1DCNN也能够学习到第24太阳周的峰值和准确预测第24太阳周的持续时间，但拟合出的双峰特征并不明显。因此，在使用过程中，我们可以结合两种方法做出判断。
+

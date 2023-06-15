@@ -1,0 +1,46 @@
+\addvspace {10.0pt}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces 人工智能、机器学习和深度学习的逻辑关系}}{2}{figure.caption.14}%
+\addvspace {10.0pt}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces 两层LSTM-RNN的示例}}{15}{figure.caption.15}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces LSTM神经元示意图}}{15}{figure.caption.16}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces 滑动窗口法}}{17}{figure.caption.17}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces AIC信息准则}}{23}{figure.caption.19}%
+\addvspace {10.0pt}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces 1949年至2021年期间月均太阳黑子数}}{27}{figure.caption.21}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces 1949年至2021年期间太阳黑子面积随时间和纬度变化的蝴蝶图}}{29}{figure.caption.22}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces 1874年至2021年期间月均太阳黑子数和面积}}{30}{figure.caption.23}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces 最佳模型预测未来1个月的太阳黑子数}}{34}{figure.caption.27}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces 最佳模型预测未来1个月的太阳黑子面积}}{35}{figure.caption.28}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces 最佳模型预测未来72个月的太阳黑子数}}{38}{figure.caption.31}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces 最佳模型预测未来72个月的太阳黑子面积}}{41}{figure.caption.33}%
+\addvspace {10.0pt}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces 龙子祠泉地理条件}}{47}{figure.caption.35}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces 龙子祠泉流量变化趋势}}{47}{figure.caption.36}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces 龙子祠泉周围9个区域降水量随时间变化的趋势图}}{48}{figure.caption.37}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces 1987年至2018年期间龙子祠泉年域降水量与泉流量分布}}{49}{figure.caption.38}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces 龙子祠泉多年月均泉流量与降水量变化趋势}}{49}{figure.caption.39}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces 不同输入时间窗口长度下最佳模型预测未来1个月泉流量}}{54}{figure.caption.41}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces 不同输入时间窗口长度下最佳模型预测未来2个月泉流量}}{56}{figure.caption.43}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces 不同输入时间窗口长度下最佳模型预测未来3个月泉流量}}{58}{figure.caption.45}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces 不同输入时间窗口长度下最佳模型预测未来4个月泉流量}}{60}{figure.caption.47}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces 最佳模型利用历史1个月泉流量预测未来1个月泉流量}}{62}{figure.caption.50}%
+\addvspace {10.0pt}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces 南加州地区区域构造}}{66}{figure.caption.51}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces 震级与频度的关系}}{67}{figure.caption.53}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces 确定$b$值的两种方法}}{68}{figure.caption.54}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces $b_\text {mle}$与$b_\text {lstsq}$}}{70}{figure.caption.56}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces 基于6个区块预测未来1年的最大震级}}{72}{figure.caption.58}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces 不同模型基于区块1预测未来1年最大震级的时间序列图（数据集划分比例为0.8：0.2）}}{73}{figure.caption.60}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces 不同模型基于整个区块预测未来1年最大震级的时间序列图（数据集划分比例为0.8：0.2）}}{75}{figure.caption.62}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces 不同模型基于整个区块预测未来10年最大震级的时间序列图（数据集划分比例为0.8：0.2）}}{78}{figure.caption.64}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces 不同模型基于整个区块预测未来10年最大震级的时间序列图（数据集划分比例为0.85：0.15）}}{79}{figure.caption.66}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces 不同模型基于整个区块预测未来10年最大震级的时间序列图（数据集划分比例为0.9：0.1）}}{81}{figure.caption.68}%
+\addvspace {10.0pt}
+\addvspace {10.0pt}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces 不同模型基于区块2预测未来1年最大震级的时间序列图（数据集划分比例为0.8：0.2）}}{92}{figure.caption.69}%
+\contentsline {figure}{\numberline {A.2}{\ignorespaces 不同模型基于区块3预测未来1年最大震级的时间序列图（数据集划分比例为0.8：0.2）}}{93}{figure.caption.70}%
+\contentsline {figure}{\numberline {A.3}{\ignorespaces 不同模型基于区块4预测未来1年最大震级的时间序列图（数据集划分比例为0.8：0.2）}}{94}{figure.caption.71}%
+\contentsline {figure}{\numberline {A.4}{\ignorespaces 不同模型基于区块5预测未来1年最大震级的时间序列图（数据集划分比例为0.8：0.2）}}{95}{figure.caption.72}%
+\contentsline {figure}{\numberline {A.5}{\ignorespaces 不同模型基于区块6预测未来1年最大震级的时间序列图（数据集划分比例为0.8：0.2）}}{96}{figure.caption.73}%
+\addvspace {10.0pt}
+\addvspace {10.0pt}

@@ -1,0 +1,43 @@
+\setlength{\headheight}{27pt}
+\PassOptionsToPackage{figuresright}{rotating}
+% \documentclass[twoside,table]{Style/ucasthesis}
+\documentclass[oneside,table]{Style/ucasthesis}
+\usepackage[authoryear,list]{Style/artratex}
+\usepackage{Style/artracom}
+\usepackage{siunitx}[=v2]
+\usepackage{makecell}
+\usepackage{multirow}
+\usepackage{overpic}
+\usepackage{longtable}
+
+\input{Tex/01_title} 
+
+\begin{document}
+
+\frontmatter
+\input{Tex/02_abstract}
+{\linespread{1.2}
+\intobmk*{\cleardoublepage}{\contentsname}\tableofcontents
+\intobmk*{\cleardoublepage}{\listfigurename}\listoffigures
+\intobmk*{\cleardoublepage}{\listtablename}\listoftables}
+\input{Tex/03_denotation}
+
+\mainmatter
+\input{Tex/chap1_intro}
+% \input{Tex/chap2_ml}
+% \input{Tex/chap3_sunspot}
+% \input{Tex/chap4_spring}
+% \input{Tex/chap5_seism}
+% \input{Tex/chap6_conclusion}
+
+\cleardoublepage
+\appendix 
+\input{Tex/11_appendix}
+
+\backmatter 
+\intotoc*{\cleardoublepage}{\bibname}
+\artxifstreq{\artxbib}{bibtex}{\bibliography{ref}}{\printbibliography}
+
+\input{Tex/12_resume} 
+
+\end{document}

@@ -1,0 +1,949 @@
+\begin{thebibliography}{143}
+\providecommand{\biband}{和}
+\providecommand{\bibetal}{等}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{#1}
+\expandafter\ifx\csname urlstyle\endcsname\relax\else
+  \urlstyle{same}\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \DeclareUrlCommand\doi{\urlstyle{rm}}
+  \def\eprint#1#2{#2}
+\else
+  \def\doi#1{\href{https://doi.org/#1}{\nolinkurl{#1}}}
+  \let\eprint\href
+\fi
+
+\bibitem[Abrahart {\bibetal}(2012)Abrahart, Anctil, Coulibaly, Dawson, Mount,
+  See, Shamseldin, Solomatine, Toth, and Wilby]{abrahart2012two}
+Abrahart~R~J, Anctil~F, Coulibaly~P, et~al.
+\newblock Two decades of anarchy? emerging themes and outstanding challenges
+  for neural network river forecasting [J].
+\newblock Progress in Physical Geography, 2012, 36\penalty0 (4): 480-513.
+
+\bibitem[Adeli {\bibetal}(2009)Adeli and Panakkat]{Adeli2009A}
+Adeli~H, Panakkat~A.
+\newblock A probabilistic neural network for earthquake magnitude prediction
+  [J/OL].
+\newblock Neural Networks: The Official Journal of the International Neural
+  Network Society, 2009, 22: 7.
+\newblock DOI: \doi{10.1016/j.neunet.2009.05.003}.
+
+\bibitem[Ahmad {\bibetal}(2010)Ahmad, Kalra, and Stephen]{ahmad2010estimating}
+Ahmad~S, Kalra~A, Stephen~H.
+\newblock Estimating soil moisture using remote sensing data: A machine
+  learning approach [J].
+\newblock Advances in Water Resources, 2010, 33\penalty0 (1): 69-80.
+
+\bibitem[Al~Banna {\bibetal}(2020)Al~Banna, Taher, Kaiser, Mahmud, Rahman,
+  Hosen, and Cho]{al2020application}
+Al~Banna~M~H, Taher~K~A, Kaiser~M~S, et~al.
+\newblock Application of artificial intelligence in predicting earthquakes:
+  State-of-the-art and future challenges [J].
+\newblock IEEE Access, 2020, 8: 192880-192923.
+
+\bibitem[Alexandridis {\bibetal}(2014)Alexandridis, Chondrodima, Efthimiou,
+  Papadakis, Vallianatos, and Triantis]{Alexandridis2014Large}
+Alexandridis~A, Chondrodima~E, Efthimiou~E, et~al.
+\newblock Large earthquake occurrence estimation based on radial basis function
+  neural networks [J/OL].
+\newblock Geoscience and Remote Sensing, IEEE Transactions on, 2014, 52:
+  5443-5453.
+\newblock DOI: \doi{10.1109/TGRS.2013.2288979}.
+
+\bibitem[Allen(1976)]{allen1976responsibilities}
+Allen~C~R.
+\newblock Responsibilities in earthquake prediction: to the seismological
+  society of america, delivered in edmonton, alberta, may 12, 1976 [J].
+\newblock Bulletin of the Seismological Society of America, 1976, 66\penalty0
+  (6): 2069-2074.
+
+\bibitem[Alves(2006)]{Alves2006Earthquake}
+Alves~E.
+\newblock Earthquake forecasting using neural networks: Results and future work
+  [J/OL].
+\newblock Nonlinear Dynamics, 2006, 44: 341-349.
+\newblock DOI: \doi{10.1007/s11071-006-2018-1}.
+
+\bibitem[Amaranto {\bibetal}(2018)Amaranto, Munoz-Arriola, Corzo, Solomatine,
+  and Meyer]{amaranto2018semi}
+Amaranto~A, Munoz-Arriola~F, Corzo~G, et~al.
+\newblock Semi-seasonal groundwater forecast using multiple data-driven models
+  in an irrigated cropland [J].
+\newblock Journal of Hydroinformatics, 2018, 20\penalty0 (6): 1227-1246.
+
+\bibitem[Amaranto {\bibetal}(2019)Amaranto, Munoz-Arriola, Solomatine, and
+  Corzo]{amaranto2019spatially}
+Amaranto~A, Munoz-Arriola~F, Solomatine~D, et~al.
+\newblock A spatially enhanced data-driven multimodel to improve semiseasonal
+  groundwater forecasts in the high plains aquifer, usa [J].
+\newblock Water Resources Research, 2019, 55\penalty0 (7): 5941-5961.
+
+\bibitem[Arlt {\bibetal}(2015)Arlt and Weiss]{arlt2015solar}
+Arlt~R, Weiss~N.
+\newblock Solar activity in the past and the chaotic behaviour of the dynamo
+  [J].
+\newblock The Solar Activity Cycle, 2015: 525-533.
+
+\bibitem[Asencio-Cort{\'e}s {\bibetal}(2016)Asencio-Cort{\'e}s,
+  Mart{\'\i}nez-{\'A}lvarez, Morales-Esteban, and
+  Reyes]{asencio2016sensitivity}
+Asencio-Cort{\'e}s~G, Mart{\'\i}nez-{\'A}lvarez~F, Morales-Esteban~A, et~al.
+\newblock A sensitivity study of seismicity indicators in supervised learning
+  to improve earthquake prediction [J].
+\newblock Knowledge-Based Systems, 2016, 101: 15-30.
+
+\bibitem[Asencio-Cort{\'e}s {\bibetal}(2017)Asencio-Cort{\'e}s, Scitovski,
+  Scitovski, and Mart{\'\i}nez-{\'A}lvarez]{asencio2017temporal}
+Asencio-Cort{\'e}s~G, Scitovski~S, Scitovski~R, et~al.
+\newblock Temporal analysis of croatian seismogenic zones to improve earthquake
+  magnitude prediction [J].
+\newblock Earth Science Informatics, 2017, 10\penalty0 (3): 303-320.
+
+\bibitem[Asim {\bibetal}(2018{\natexlab{a}})Asim, Idris, Iqbal, and
+  Martínez-Álvarez]{Asim2018Earthquake}
+Asim~K, Idris~A, Iqbal~T, et~al.
+\newblock Earthquake prediction model using support vector regressor and hybrid
+  neural networks [J/OL].
+\newblock PLOS ONE, 2018, 13: e0199004.
+\newblock DOI: \doi{10.1371/journal.pone.0199004}.
+
+\bibitem[Asim {\bibetal}(2018{\natexlab{b}})Asim, Idris, Iqbal, and
+  Mart{\'\i}nez-{\'A}lvarez]{asim2018seismic}
+Asim~K~M, Idris~A, Iqbal~T, et~al.
+\newblock Seismic indicators based earthquake predictor system using genetic
+  programming and adaboost classification [J].
+\newblock Soil Dynamics and Earthquake Engineering, 2018, 111: 1-7.
+
+\bibitem[Asim {\bibetal}(2017)Asim, Mart{\'\i}nez-{\'A}lvarez, Basit, and
+  Iqbal]{asim2017earthquake}
+Asim~K, Mart{\'\i}nez-{\'A}lvarez~F, Basit~A, et~al.
+\newblock Earthquake magnitude prediction in hindukush region using machine
+  learning techniques [J].
+\newblock Natural Hazards, 2017, 85\penalty0 (1): 471-486.
+
+\bibitem[Bartolino(2003)]{bartolino2003ground}
+Bartolino~J~R.
+\newblock Ground-water depletion across the nation [M].
+\newblock US Department of the Interior, US Geological Survey, 2003.
+
+\bibitem[Ben-Zion {\bibetal}(2002)Ben-Zion and Lyakhovsky]{Ben2002Accelerated}
+Ben-Zion~Y, Lyakhovsky~V.
+\newblock Accelerated seismic release and related aspects of seismicity
+  patterns on earthquake faults [J/OL].
+\newblock Pure Appl. Geophys., 2002, 159: 2385-2412.
+\newblock DOI: \doi{10.1007/s00024-002-8740-9}.
+
+\bibitem[Berhich {\bibetal}(2020)Berhich, Belouadha, and
+  Kabbaj]{berhich2020lstm}
+Berhich~A, Belouadha~F~Z, Kabbaj~M~I.
+\newblock Lstm-based models for earthquake prediction [C]//\allowbreak
+Proceedings of the 3rd International Conference on Networking, Information
+  Systems \& Security.
+\newblock 2020: 1-7.
+
+\bibitem[Bhatia {\bibetal}(2018)Bhatia, Pasari, and
+  Mehta]{Bhatia2018EARTHQUAKE}
+Bhatia~A, Pasari~S, Mehta~A.
+\newblock Earthquake forecasting using artificial neural networks [J/OL].
+\newblock ISPRS - International Archives of the Photogrammetry, Remote Sensing
+  and Spatial Information Sciences, 2018, XLII-5: 823-827.
+\newblock DOI: \doi{10.5194/isprs-archives-XLII-5-823-2018}.
+
+\bibitem[Bhowmik {\bibetal}(2018)Bhowmik and Nandy]{bhowmik2018prediction}
+Bhowmik~P, Nandy~D.
+\newblock Prediction of the strength and timing of sunspot cycle 25 reveal
+  decadal-scale space environmental conditions [J].
+\newblock Nature Communications, 2018, 9\penalty0 (1): 1-10.
+
+\bibitem[Bisoi {\bibetal}(2020)Bisoi, Janardhan, and
+  Ananthakrishnan]{bisoi2020another}
+Bisoi~S~K, Janardhan~P, Ananthakrishnan~S.
+\newblock Another mini solar maximum in the offing: A prediction for the
+  amplitude of solar cycle 25 [J].
+\newblock Journal of Geophysical Research: Space Physics, 2020, 125\penalty0
+  (7): e2019JA027508.
+
+\bibitem[Bougher(2016)]{bougher2016machine}
+Bougher~B~B.
+\newblock Machine learning applications to geophysical data analysis [D].
+\newblock University of British Columbia, 2016.
+
+\bibitem[Butler~Jr {\bibetal}(2018)Butler~Jr, Whittemore, Wilson, and
+  Bohling]{butler2018sustainability}
+Butler~Jr~J~J, Whittemore~D~O, Wilson~B~B, et~al.
+\newblock Sustainability of aquifers supporting irrigated agriculture: A case
+  study of the high plains aquifer in Kansas [J].
+\newblock Water International, 2018, 43\penalty0 (6): 815-828.
+
+\bibitem[Camporeale(2019)]{camporeale2019challenge}
+Camporeale~E.
+\newblock The challenge of machine learning in space weather: Nowcasting and
+  forecasting [J].
+\newblock Space Weather, 2019, 17\penalty0 (8): 1166-1207.
+
+\bibitem[Camps-Valls {\bibetal}(2018)Camps-Valls, Martino, Svendsen,
+  Campos-Taberner, Mu{\~n}oz-Mar{\'\i}, Laparra, Luengo, and
+  Garc{\'\i}a-Haro]{camps2018physics}
+Camps-Valls~G, Martino~L, Svendsen~D~H, et~al.
+\newblock Physics-aware gaussian processes in remote sensing [J].
+\newblock Applied Soft Computing, 2018, 68: 69-82.
+
+\bibitem[Camps-Valls {\bibetal}(2013)Camps-Valls, Tuia, Bruzzone, and
+  Benediktsson]{camps2013advances}
+Camps-Valls~G, Tuia~D, Bruzzone~L, et~al.
+\newblock Advances in hyperspectral image classification: Earth monitoring with
+  statistical learning methods [J].
+\newblock IEEE Signal Processing Magazine, 2013, 31\penalty0 (1): 45-54.
+
+\bibitem[Charbonneau(2010)]{charbonneau2010dynamo}
+Charbonneau~P.
+\newblock Dynamo models of the solar cycle [J].
+\newblock Living Reviews in Solar Physics, 2010, 7\penalty0 (1): 1-91.
+
+\bibitem[Cheng {\bibetal}(2021)Cheng, Qiao, Shi, and Wang]{cheng2021machine}
+Cheng~S, Qiao~X, Shi~Y, et~al.
+\newblock Machine learning for predicting discharge fluctuation of a karst
+  spring in North China [J].
+\newblock Acta Geophysica, 2021, 69\penalty0 (1): 257-270.
+
+\bibitem[Coppola~Jr {\bibetal}(2003)Coppola~Jr, Szidarovszky, Poulton, and
+  Charles]{coppola2003artificial}
+Coppola~Jr~E, Szidarovszky~F, Poulton~M, et~al.
+\newblock Artificial neural network approach for predicting transient water
+  levels in a multilayered groundwater system under variable state, pumping,
+  and climate conditions [J].
+\newblock Journal of Hydrologic Engineering, 2003, 8\penalty0 (6): 348-360.
+
+\bibitem[Covas {\bibetal}(2019)Covas, Peixinho, and Fernandes]{covas2019neural}
+Covas~E, Peixinho~N, Fernandes~J.
+\newblock Neural network forecast of the sunspot butterfly diagram [J].
+\newblock Solar Physics, 2019, 294\penalty0 (3): 1-15.
+
+\bibitem[Dalin {\bibetal}(2017)Dalin, Wada, Kastner, and
+  Puma]{dalin2017groundwater}
+Dalin~C, Wada~Y, Kastner~T, et~al.
+\newblock Groundwater depletion embedded in international food trade [J].
+\newblock Nature, 2017, 543\penalty0 (7647): 700-704.
+
+\bibitem[Dani {\bibetal}(2019)Dani and Sulistiani]{dani2019prediction}
+Dani~T, Sulistiani~S.
+\newblock Prediction of maximum amplitude of solar cycle 25 using machine
+  learning [C]//\allowbreak
+Journal of Physics: Conference Series: volume 1231.
+\newblock IOP Publishing, 2019: 012022.
+
+\bibitem[Deka {\bibetal}(2014)Deka et~al.]{deka2014support}
+Deka~P~C, et~al.
+\newblock Support vector machine applications in the field of hydrology: A
+  review [J].
+\newblock Applied Soft Computing, 2014, 19: 372-386.
+
+\bibitem[DeVries {\bibetal}(2018)DeVries, Vi{\'e}gas, Wattenberg, and
+  Meade]{devries2018deep}
+DeVries~P~M, Vi{\'e}gas~F, Wattenberg~M, et~al.
+\newblock Deep learning of aftershock patterns following large earthquakes [J].
+\newblock Nature, 2018, 560\penalty0 (7720): 632-634.
+
+\bibitem[Dibike {\bibetal}(2001)Dibike, Velickov, Solomatine, and
+  Abbott]{dibike2001model}
+Dibike~Y~B, Velickov~S, Solomatine~D, et~al.
+\newblock Model induction with support vector machines: Introduction and
+  applications [J].
+\newblock Journal of Computing in Civil Engineering, 2001, 15\penalty0 (3):
+  208-216.
+
+\bibitem[Ding {\bibetal}(2012)Ding, Lan, Jiang, and Peng]{ding2012prediction}
+Ding~L, Lan~R, Jiang~Y, et~al.
+\newblock Prediction of the smoothed monthly mean sunspot area based on neural
+  network [J].
+\newblock Transactions of Atmospheric Sciences, 2012, 35\penalty0 (4): 508-512.
+
+\bibitem[Diodato {\bibetal}(2014)Diodato, Guerriero, Fiorillo, Esposito,
+  Revellino, Grelle, and Guadagno]{diodato2014predicting}
+Diodato~N, Guerriero~L, Fiorillo~F, et~al.
+\newblock Predicting monthly spring discharges using a simple statistical model
+  [J].
+\newblock Water Resources Management, 2014, 28\penalty0 (4): 969-978.
+
+\bibitem[Du(2020)]{du2020solar}
+Du~Z.
+\newblock The solar cycle: Predicting the peak of solar cycle 25 [J].
+\newblock Astrophysics and Space Science, 2020, 365\penalty0 (6): 1-5.
+
+\bibitem[Etemad-Shahidi {\bibetal}(2011)Etemad-Shahidi and
+  Ghaemi]{etemad2011model}
+Etemad-Shahidi~A, Ghaemi~N.
+\newblock Model tree approach for prediction of pile groups scour due to waves
+  [J].
+\newblock Ocean Engineering, 2011, 38\penalty0 (13): 1522-1527.
+
+\bibitem[Evans(1997)]{evans1997assessment}
+Evans~R.
+\newblock Assessment of schemes for earthquake prediction: Editor's
+  introduction [J].
+\newblock Geophysical Journal International, 1997, 131\penalty0 (3): 413-420.
+
+\bibitem[Fan {\bibetal}(2013)Fan, Huo, Hao, Liu, Wang, Liu, and
+  Yeh]{fan2013assembled}
+Fan~Y, Huo~X, Hao~Y, et~al.
+\newblock An assembled extreme value statistical model of karst spring
+  discharge [J].
+\newblock Journal of Hydrology, 2013, 504: 57-68.
+
+\bibitem[Feyyad(1996)]{feyyad1996data}
+Feyyad~U.
+\newblock Data mining and knowledge discovery: Making sense out of data [J].
+\newblock IEEE expert, 1996, 11\penalty0 (5): 20-25.
+
+\bibitem[Fiorillo {\bibetal}(2010)Fiorillo and Doglioni]{fiorillo2010relation}
+Fiorillo~F, Doglioni~A.
+\newblock The relation between karst spring discharge and rainfall by
+  cross-correlation analysis (Campania, Southern Italy) [J].
+\newblock Hydrogeology Journal, 2010, 18\penalty0 (8): 1881-1895.
+
+\bibitem[Friedlingstein {\bibetal}(2014)Friedlingstein, Meinshausen, Arora,
+  Jones, Anav, Liddicoat, and Knutti]{friedlingstein2014uncertainties}
+Friedlingstein~P, Meinshausen~M, Arora~V~K, et~al.
+\newblock Uncertainties in cmip5 climate projections due to carbon cycle
+  feedbacks [J].
+\newblock Journal of Climate, 2014, 27\penalty0 (2): 511-526.
+
+\bibitem[Galelli {\bibetal}(2010)Galelli, Gandolfi, Soncini-Sessa, and
+  Agostani]{galelli2010building}
+Galelli~S, Gandolfi~C, Soncini-Sessa~R, et~al.
+\newblock Building a metamodel of an irrigation district distributed-parameter
+  model [J].
+\newblock Agricultural Water Management, 2010, 97\penalty0 (2): 187-200.
+
+\bibitem[Geller {\bibetal}(1997)Geller, Jackson, Kagan, and
+  Mulargia]{geller1997earthquakes}
+Geller~R~J, Jackson~D~D, Kagan~Y~Y, et~al.
+\newblock Earthquakes cannot be predicted [J].
+\newblock Science, 1997, 275\penalty0 (5306): 1616-1616.
+
+\bibitem[Ghahramani(2015)]{ghahramani2015probabilistic}
+Ghahramani~Z.
+\newblock Probabilistic machine learning and artificial intelligence [J].
+\newblock Nature, 2015, 521\penalty0 (7553): 452-459.
+
+\bibitem[Gislason {\bibetal}(2006)Gislason, Benediktsson, and
+  Sveinsson]{gislason2006random}
+Gislason~P~O, Benediktsson~J~A, Sveinsson~J~R.
+\newblock Random forests for land cover classification [J].
+\newblock Pattern recognition letters, 2006, 27\penalty0 (4): 294-300.
+
+\bibitem[Gleissberg(1939)]{gleissberg1939long}
+Gleissberg~W.
+\newblock A long-periodic fluctuation of the sun-spot numbers [J].
+\newblock The Observatory, 1939, 62: 158-159.
+
+\bibitem[G{\'o}mez-Chova {\bibetal}(2015)G{\'o}mez-Chova, Tuia, Moser, and
+  Camps-Valls]{gomez2015multimodal}
+G{\'o}mez-Chova~L, Tuia~D, Moser~G, et~al.
+\newblock Multimodal classification of remote sensing images: A review and
+  future directions [J].
+\newblock Proceedings of the IEEE, 2015, 103\penalty0 (9): 1560-1584.
+
+\bibitem[Goodfellow {\bibetal}(2014)Goodfellow, Pouget-Abadie, Mirza, Xu,
+  Warde-Farley, Ozair, Courville, and Bengio]{goodfellow2014generative}
+Goodfellow~I, Pouget-Abadie~J, Mirza~M, et~al.
+\newblock Generative adversarial nets [J].
+\newblock Advances in Neural Information Processing Systems, 2014, 27.
+
+\bibitem[Goodfellow {\bibetal}(2016)Goodfellow, Bengio, and
+  Courville]{Goodfellow2016Deep}
+Goodfellow~I, Bengio~Y, Courville~A.
+\newblock Adaptive computation and machine learning series: Deep learning [M].
+\newblock The MIT Press, 2016.
+
+\bibitem[Goyal(2014)]{goyal2014modeling}
+Goyal~M~K.
+\newblock Modeling of sediment yield prediction using M5 model tree algorithm
+  and wavelet regression [J].
+\newblock Water resources management, 2014, 28\penalty0 (7): 1991-2003.
+
+\bibitem[Granata {\bibetal}(2016)Granata, Gargano, and
+  De~Marinis]{granata2016support}
+Granata~F, Gargano~R, De~Marinis~G.
+\newblock Support vector regression for rainfall-runoff modeling in urban
+  drainage: A comparison with the epa's storm water management model [J].
+\newblock Water, 2016, 8\penalty0 (3): 69.
+
+\bibitem[Granata {\bibetal}(2017)Granata, Papirio, Esposito, Gargano, and
+  De~Marinis]{granata2017machine}
+Granata~F, Papirio~S, Esposito~G, et~al.
+\newblock Machine learning algorithms for the forecasting of wastewater quality
+  indicators [J].
+\newblock Water, 2017, 9\penalty0 (2): 105.
+
+\bibitem[Gutenberg {\bibetal}(1994)Gutenberg and
+  Richter]{Gutenberg1994Frequency}
+Gutenberg~B, Richter~C.
+\newblock Frequency of earthquakes in california [J].
+\newblock Bulletin of the Seismological Society of America, 1994, 34: 185-188.
+
+\bibitem[Guzman {\bibetal}(2017)Guzman, Paz, and Tagert]{guzman2017use}
+Guzman~S~M, Paz~J~O, Tagert~M~L~M.
+\newblock The use of NARX neural networks to forecast daily groundwater levels
+  [J].
+\newblock Water Resources Management, 2017, 31\penalty0 (5): 1591-1603.
+
+\bibitem[Hathaway(2015)]{hathaway2015solar}
+Hathaway~D~H.
+\newblock The solar cycle [J].
+\newblock Living Reviews in Solar Physics, 2015, 12\penalty0 (1): 4.
+
+\bibitem[Herrera {\bibetal}(2015)Herrera, Mendoza, and
+  Herrera]{herrera2015reconstruction}
+Herrera~V~V, Mendoza~B, Herrera~G~V.
+\newblock Reconstruction and prediction of the total solar irradiance: From the
+  medieval warm period to the 21st century [J].
+\newblock New Astronomy, 2015, 34: 221-233.
+
+\bibitem[Hiremath(2008)]{hiremath2008prediction}
+Hiremath~K.
+\newblock Prediction of solar cycle 24 and beyond [J].
+\newblock Astrophysics and Space Science, 2008, 314\penalty0 (1): 45-49.
+
+\bibitem[Hochreiter {\bibetal}(1997)Hochreiter and
+  Schmidhuber]{hochreiter1997long}
+Hochreiter~S, Schmidhuber~J.
+\newblock Long short-term memory [J].
+\newblock Neural computation, 1997, 9\penalty0 (8): 1735-1780.
+
+\bibitem[Howe {\bibetal}(1993)Howe and Wain]{howe1993predicting}
+Howe~L, Wain~A.
+\newblock Predicting the future [M].
+\newblock Cambridge University Press, 1993.
+
+\bibitem[Hu {\bibetal}(2008)Hu, Hao, Yeh, Pang, and Wu]{hu2008simulation}
+Hu~C, Hao~Y, Yeh~T~C~J, et~al.
+\newblock Simulation of spring flows from a karst aquifer with an artificial
+  neural network [J].
+\newblock Hydrological Processes: An International Journal, 2008, 22\penalty0
+  (5): 596-604.
+
+\bibitem[Huang {\bibetal}(2018)Huang, Wang, Zhao, Xin, and
+  Xiang]{huang2018large}
+Huang~J, Wang~X, Zhao~Y, et~al.
+\newblock Large earthquake magnitude prediction in taiwan based on deep
+  learning neural network [J].
+\newblock Neural Network World, 2018, 28\penalty0 (2): 149-160.
+
+\bibitem[Iglesias {\bibetal}(2015)Iglesias and Garrote]{iglesias2015adaptation}
+Iglesias~A, Garrote~L.
+\newblock Adaptation strategies for agricultural water management under climate
+  change in Europe [J].
+\newblock Agricultural Water Management, 2015, 155: 113-124.
+
+\bibitem[Jiang {\bibetal}(2011)Jiang and Song]{jiang2011sunspot}
+Jiang~C, Song~F.
+\newblock Sunspot forecasting by using chaotic time-series analysis and NARX
+  network [J].
+\newblock Journal of Computers, 2011, 6\penalty0 (7): 1424-1429.
+
+\bibitem[Jie {\bibetal}(2012)Jie and Xiong]{jie2012prediction}
+Jie~T, Xiong~Z.
+\newblock Prediction of smoothed monthly mean sunspot number based on chaos
+  theory [J].
+\newblock Acta Physica Sinica, 2012, 61\penalty0 (16).
+
+\bibitem[Jordan(2006)]{jordan2006earthquake}
+Jordan~T~H.
+\newblock Earthquake predictability, brick by brick [J].
+\newblock Seismological Research Letters, 2006, 77\penalty0 (1): 3-6.
+
+\bibitem[Kane(2007)]{kane2007solar}
+Kane~R.
+\newblock Solar cycle predictions based on extrapolation of spectral
+  components: An update [J].
+\newblock Solar Physics, 2007, 246\penalty0 (2): 487-493.
+
+\bibitem[Karpatne {\bibetal}(2017{\natexlab{a}})Karpatne, Atluri, Faghmous,
+  Steinbach, Banerjee, Ganguly, Shekhar, Samatova, and
+  Kumar]{karpatne2017theory}
+Karpatne~A, Atluri~G, Faghmous~J~H, et~al.
+\newblock Theory-guided data science: A new paradigm for scientific discovery
+  from data [J].
+\newblock IEEE Transactions on Knowledge and Data Engineering, 2017,
+  29\penalty0 (10): 2318-2331.
+
+\bibitem[Karpatne {\bibetal}(2017{\natexlab{b}})Karpatne, Watkins, Read, and
+  Kumar]{karpatne2017physics}
+Karpatne~A, Watkins~W, Read~J, et~al.
+\newblock Physics-guided neural networks (pgnn): An application in lake
+  temperature modeling [J].
+\newblock arXiv preprint arXiv:1710.11431, 2017.
+
+\bibitem[Kingma {\bibetal}(2014)Kingma and Ba]{kingma2014adam}
+Kingma~D~P, Ba~J.
+\newblock Adam: A method for stochastic optimization [J].
+\newblock arXiv preprint arXiv:1412.6980, 2014.
+
+\bibitem[Kitiashvili(2020)]{kitiashvili2020application}
+Kitiashvili~I~N.
+\newblock Application of synoptic magnetograms to global solar activity
+  forecast [J].
+\newblock The Astrophysical Journal, 2020, 890\penalty0 (1): 36.
+
+\bibitem[Kresic {\bibetal}(2009)Kresic and Stevanovic]{kresic2009groundwater}
+Kresic~N, Stevanovic~Z.
+\newblock Groundwater hydrology of springs: Engineering, theory, management and
+  sustainability [M].
+\newblock Butterworth-heinemann, 2009.
+
+\bibitem[Lambrakis {\bibetal}(2000)Lambrakis, Andreou, Polydoropoulos,
+  Georgopoulos, and Bountis]{lambrakis2000nonlinear}
+Lambrakis~N, Andreou~A~S, Polydoropoulos~P, et~al.
+\newblock Nonlinear analysis and forecasting of a brackish karstic spring [J].
+\newblock Water Resources Research, 2000, 36\penalty0 (4): 875-884.
+
+\bibitem[Last {\bibetal}(2016)Last, Rabinowitz, and
+  Leonard]{Last2016predicting}
+Last~M, Rabinowitz~N, Leonard~G.
+\newblock Predicting the maximum earthquake magnitude from seismic data in
+  israel and its neighboring countries [J/OL].
+\newblock PLOS ONE, 2016, 11: e0146101.
+\newblock DOI: \doi{10.1371/journal.pone.0146101}.
+
+\bibitem[Le {\bibetal}(2016)Le, Perez, Solomatine, and
+  Nguyen]{le2016meteorological}
+Le~M~H, Perez~G~C, Solomatine~D, et~al.
+\newblock Meteorological drought forecasting based on climate signals using
+  artificial neural network---A case study in khanhhoa Province Vietnam [J].
+\newblock Procedia Engineering, 2016, 154: 1169-1175.
+
+\bibitem[Lee {\bibetal}(1990)Lee, Weger, Sengupta, and Welch]{lee1990neural}
+Lee~J, Weger~R~C, Sengupta~S~K, et~al.
+\newblock A neural network approach to cloud classification [J].
+\newblock IEEE Transactions on Geoscience and Remote Sensing, 1990, 28\penalty0
+  (5): 846-855.
+
+\bibitem[Li {\bibetal}(2018)Li, Ma, and Yang]{li2018hybrid}
+Li~G, Ma~X, Yang~H.
+\newblock A hybrid model for forecasting sunspots time series based on
+  variational mode decomposition and backpropagation neural network improved by
+  firefly algorithm [J].
+\newblock Computational Intelligence and Neuroscience, 2018, 2018.
+
+\bibitem[Li {\bibetal}(2021)Li, Wan, Zeng, Zheng, and Deng]{li2021predicting}
+Li~Q, Wan~M, Zeng~S~G, et~al.
+\newblock Predicting the 25th solar cycle using deep learning methods based on
+  sunspot area data [J].
+\newblock Research in Astronomy and Astrophysics, 2021, 21\penalty0 (7): 184.
+
+\bibitem[López {\bibetal}(2019)López, Márquez, and
+  Hernández]{Lopez2019Evolutionary}
+López~S, Márquez~A, Hernández~F~A.
+\newblock Evolutionary design of linguistic fuzzy regression systems with
+  adaptive defuzzification in big data environments [J/OL].
+\newblock Cognitive Computation, 2019, 11: 1-12.
+\newblock DOI: \doi{10.1007/s12559-019-09632-4}.
+
+\bibitem[Madahizadeh {\bibetal}(2009)Madahizadeh and
+  Allamehzadeh]{Madahizadeh2009prediction}
+Madahizadeh~R, Allamehzadeh~M.
+\newblock Prediction of aftershocks distribution using artificial neural
+  networks and its application on the may 12, 2008 sichuan earthquake [J].
+\newblock Journal of Seismology and Earthquake Engineering, 2009, 11.
+
+\bibitem[Mart{\'\i}nez-{\'A}lvarez {\bibetal}(2013)Mart{\'\i}nez-{\'A}lvarez,
+  Reyes, Morales-Esteban, and Rubio-Escudero]{martinez2013determining}
+Mart{\'\i}nez-{\'A}lvarez~F, Reyes~J, Morales-Esteban~A, et~al.
+\newblock Determining the best set of seismicity indicators to predict
+  earthquakes. two case studies: Chile and the iberian peninsula [J].
+\newblock Knowledge-Based Systems, 2013, 50: 198-210.
+
+\bibitem[Mathieu {\bibetal}(2015)Mathieu, Couprie, and LeCun]{mathieu2015deep}
+Mathieu~M, Couprie~C, LeCun~Y.
+\newblock Deep multi-scale video prediction beyond mean square error [J].
+\newblock arXiv preprint arXiv:1511.05440, 2015.
+
+\bibitem[McIntosh {\bibetal}(2020)McIntosh, Chapman, Leamon, Egeland, and
+  Watkins]{mcintosh2020overlapping}
+McIntosh~S~W, Chapman~S, Leamon~R~J, et~al.
+\newblock Overlapping magnetic activity cycles and the sunspot number:
+  Forecasting sunspot cycle 25 amplitude [J].
+\newblock Solar Physics, 2020, 295\penalty0 (12): 1-14.
+
+\bibitem[Mendoza {\bibetal}(2011)Mendoza and Velasco-Herrera]{mendoza2011mid}
+Mendoza~B, Velasco-Herrera~V~M.
+\newblock On mid-term periodicities in sunspot groups and flare index [J].
+\newblock Solar Physics, 2011, 271\penalty0 (1): 169-182.
+
+\bibitem[Mirrashid(2014)]{mirrashid2014earthquake}
+Mirrashid~M.
+\newblock Earthquake magnitude prediction by adaptive neuro-fuzzy inference
+  system (anfis) based on fuzzy c-means algorithm [J].
+\newblock Natural hazards, 2014, 74\penalty0 (3): 1577-1593.
+
+\bibitem[Mitchell {\bibetal}(1997)Mitchell et~al.]{Mitchell1997Machine}
+Mitchell~T~M, et~al.
+\newblock Machine learning. 1997 [J].
+\newblock Burr Ridge, IL: McGraw Hill, 1997, 45\penalty0 (37): 870-877.
+
+\bibitem[Montavon {\bibetal}(2018)Montavon, Samek, and
+  M{\"u}ller]{montavon2018methods}
+Montavon~G, Samek~W, M{\"u}ller~K~R.
+\newblock Methods for interpreting and understanding deep neural networks [J].
+\newblock Digital Signal Processing, 2018, 73: 1-15.
+
+\bibitem[Morales-Esteban {\bibetal}(2013)Morales-Esteban,
+  Mart{\'\i}nez-{\'A}lvarez, and Reyes]{morales2013earthquake}
+Morales-Esteban~A, Mart{\'\i}nez-{\'A}lvarez~F, Reyes~J.
+\newblock Earthquake prediction in seismogenic areas of the iberian peninsula
+  based on computational intelligence [J].
+\newblock Tectonophysics, 2013, 593: 121-134.
+
+\bibitem[Muhlbauer {\bibetal}(2014)Muhlbauer, McCoy, and
+  Wood]{muhlbauer2014climatology}
+Muhlbauer~A, McCoy~I~L, Wood~R.
+\newblock Climatology of stratocumulus cloud morphologies: Microphysical
+  properties and radiative effects [J].
+\newblock Atmospheric Chemistry and Physics, 2014, 14\penalty0 (13): 6695-6716.
+
+\bibitem[Najafzadeh {\bibetal}(2016{\natexlab{a}})Najafzadeh, Etemad-Shahidi,
+  and Lim]{najafzadeh2016scour}
+Najafzadeh~M, Etemad-Shahidi~A, Lim~S~Y.
+\newblock Scour prediction in long contractions using ANFIS and SVM [J].
+\newblock Ocean Engineering, 2016, 111: 128-135.
+
+\bibitem[Najafzadeh {\bibetal}(2016{\natexlab{b}})Najafzadeh, Rezaie~Balf, and
+  Rashedi]{najafzadeh2016prediction}
+Najafzadeh~M, Rezaie~Balf~M, Rashedi~E.
+\newblock Prediction of maximum scour depth around piers with debris
+  accumulation using EPR, MT, and GEP models [J].
+\newblock Journal of Hydroinformatics, 2016, 18\penalty0 (5): 867-884.
+
+\bibitem[Najafzadeh {\bibetal}(2017{\natexlab{a}})Najafzadeh, Laucelli, and
+  Zahiri]{najafzadeh2017application}
+Najafzadeh~M, Laucelli~D~B, Zahiri~A.
+\newblock Application of model tree and evolutionary polynomial regression for
+  evaluation of sediment transport in pipes [J].
+\newblock KSCE Journal of Civil Engineering, 2017, 21\penalty0 (5): 1956-1963.
+
+\bibitem[Najafzadeh {\bibetal}(2017{\natexlab{b}})Najafzadeh, Tafarojnoruz, and
+  Lim]{najafzadeh2017prediction}
+Najafzadeh~M, Tafarojnoruz~A, Lim~S~Y.
+\newblock Prediction of local scour depth downstream of sluice gates using
+  data-driven models [J].
+\newblock ISH Journal of Hydraulic Engineering, 2017, 23\penalty0 (2): 195-202.
+
+\bibitem[Narayanakumar {\bibetal}(2016)Narayanakumar and
+  Raja]{Narayanakumar2016A}
+Narayanakumar~S, Raja~K.
+\newblock A bp artificial neural network model for earthquake magnitude
+  prediction in himalayas, india [J/OL].
+\newblock Circuits and Systems, 2016, 07: 3456-3468.
+\newblock DOI: \doi{10.4236/cs.2016.711294}.
+
+\bibitem[Nayak {\bibetal}(2006)Nayak, Rao, and Sudheer]{nayak2006groundwater}
+Nayak~P~C, Rao~Y~S, Sudheer~K.
+\newblock Groundwater level forecasting in a shallow aquifer using artificial
+  neural network approach [J].
+\newblock Water Resources Management, 2006, 20\penalty0 (1): 77-90.
+
+\bibitem[Noyes(2013)]{noyes2013sun}
+Noyes~R~W.
+\newblock The sun, our star [M].
+\newblock Harvard University Press, 2013.
+
+\bibitem[Ogata(1986)]{Ogata1986Statistical}
+Ogata~Y.
+\newblock Statistical models for earthquake occurrences and residual analysis
+  for point processes [J].
+\newblock Mathematical Seismology, 1986, 1: 228-281.
+
+\bibitem[Oh {\bibetal}(2015)Oh, Guo, Lee, Lewis, and Singh]{oh2015action}
+Oh~J, Guo~X, Lee~H, et~al.
+\newblock Action-conditional video prediction using deep networks in atari
+  games [J].
+\newblock arXiv preprint arXiv:1507.08750, 2015.
+
+\bibitem[Okoh {\bibetal}(2018)Okoh, Seemala, Rabiu, Uwamahoro, Habarulema, and
+  Aggarwal]{okoh2018hybrid}
+Okoh~D, Seemala~G, Rabiu~A, et~al.
+\newblock A hybrid regression-neural network (hr-nn) method for forecasting the
+  solar activity [J].
+\newblock Space Weather, 2018, 16\penalty0 (9): 1424-1436.
+
+\bibitem[Pala {\bibetal}(2019)Pala and Atici]{pala2019forecasting}
+Pala~Z, Atici~R.
+\newblock Forecasting sunspot time series using deep learning methods [J].
+\newblock Solar Physics, 2019, 294\penalty0 (5): 1-14.
+
+\bibitem[Panakkat {\bibetal}(2007)Panakkat and Adeli]{Panakkat2007Neural}
+Panakkat~A, Adeli~H.
+\newblock Neural network models for earthquake magnitude prediction using
+  multiple seismicity indicators [J].
+\newblock International journal of neural systems, 2007, 17\penalty0 (01):
+  13-33.
+
+\bibitem[Panakkat {\bibetal}(2009)Panakkat and Adeli]{Panakkat2009Recurrent}
+Panakkat~A, Adeli~H.
+\newblock Recurrent neural network for approximate earthquake time and location
+  prediction using multiple seismicity indicators [J/OL].
+\newblock Computer-Aided Civil and Infrastructure Engineering, 2009, 24:
+  280-292.
+\newblock DOI: \doi{10.1111/j.1467-8667.2009.00595.x}.
+
+\bibitem[Panigrahi {\bibetal}(2021)Panigrahi, Pattanayak, Sethy, and
+  Behera]{panigrahi2021forecasting}
+Panigrahi~S, Pattanayak~R~M, Sethy~P~K, et~al.
+\newblock Forecasting of sunspot time series using a hybridization of arima,
+  ets and svm methods [J].
+\newblock Solar Physics, 2021, 296\penalty0 (1): 1-19.
+
+\bibitem[Perol {\bibetal}(2018)Perol, Gharbi, and
+  Denolle]{perol2018convolutional}
+Perol~T, Gharbi~M, Denolle~M.
+\newblock Convolutional neural network for earthquake detection and location
+  [J].
+\newblock Science Advances, 2018, 4\penalty0 (2): e1700578.
+
+\bibitem[Pesnell(2018)]{pesnell2018effects}
+Pesnell~W~D.
+\newblock Effects of version 2 of the international sunspot number on
+  na{\"\i}ve predictions of solar cycle 25 [J].
+\newblock Space Weather, 2018, 16\penalty0 (12): 1997-2003.
+
+\bibitem[Petrovay(2010)]{petrovay2010solar}
+Petrovay~K.
+\newblock Solar cycle prediction [J].
+\newblock Living Reviews in Solar Physics, 2010, 7\penalty0 (1): 1-59.
+
+\bibitem[Portmann {\bibetal}(2010)Portmann, Siebert, and
+  D{\"o}ll]{portmann2010mirca2000}
+Portmann~F~T, Siebert~S, D{\"o}ll~P.
+\newblock Mirca2000--global monthly irrigated and rainfed crop areas around
+  the year 2000: A new high-resolution data set for agricultural and
+  hydrological modeling [J].
+\newblock Global biogeochemical cycles, 2010, 24\penalty0 (1).
+
+\bibitem[Pulinets {\bibetal}(2018)Pulinets and Ouzounov]{Pulinets2018What}
+Pulinets~S, Ouzounov~D.
+\newblock What is the meaning of a short-term earthquake forecast?
+  [M/OL]//\allowbreak
+2053-2563: The possibility of earthquake forecasting.
+\newblock IOP Publishing, 2018: 1-1 to 1-16.
+\newblock \url{http://dx.doi.org/10.1088/978-0-7503-1248-6ch1}.
+
+\bibitem[Rakhshandehroo {\bibetal}(2018)Rakhshandehroo, Akbari, Igder, and
+  Ostadzadeh]{Rakhshandehroo2018Long}
+Rakhshandehroo~G, Akbari~A, Igder~M, et~al.
+\newblock Long term groundwater level forecasting in shallow and deep wells
+  using wavelet neural networks trained by an improved harmony search algorithm
+  [J/OL].
+\newblock Journal of Hydrologic Engineering, 2018, 23.
+
+\bibitem[Reichstein {\bibetal}(2019)Reichstein, Camps-Valls, Stevens, Jung,
+  Denzler, Carvalhais, et~al.]{reichstein2019deep}
+Reichstein~M, Camps-Valls~G, Stevens~B, et~al.
+\newblock Deep learning and process understanding for data-driven earth system
+  science [J].
+\newblock Nature, 2019, 566\penalty0 (7743): 195-204.
+
+\bibitem[Reitsma(2010)]{reitsma2010geoscience}
+Reitsma~F.
+\newblock Geoscience explanations: Identifying what is needed for generating
+  scientific narratives from data models [J].
+\newblock Environmental Modelling \& Software, 2010, 25\penalty0 (1): 93-99.
+
+\bibitem[Reyes {\bibetal}(2013)Reyes, Morales-Esteban, and
+  Mart{\'\i}nez-{\'A}lvarez]{reyes2013neural}
+Reyes~J, Morales-Esteban~A, Mart{\'\i}nez-{\'A}lvarez~F.
+\newblock Neural networks to predict earthquakes in chile [J].
+\newblock Applied Soft Computing, 2013, 13\penalty0 (2): 1314-1328.
+
+\bibitem[Rigozo {\bibetal}(2011)Rigozo, Echer, Evangelista, Nordemann, and
+  Echer]{rigozo2011prediction}
+Rigozo~N, Echer~M~S, Evangelista~H, et~al.
+\newblock Prediction of sunspot number amplitude and solar cycle length for
+  cycles 24 and 25 [J].
+\newblock Journal of Atmospheric and Solar-Terrestrial Physics, 2011,
+  73\penalty0 (11-12): 1294-1299.
+
+\bibitem[Rouet-Leduc {\bibetal}(2017)Rouet-Leduc, Hulbert, Lubbers, Barros,
+  Humphreys, and Johnson]{rouet2017machine}
+Rouet-Leduc~B, Hulbert~C, Lubbers~N, et~al.
+\newblock Machine learning predicts laboratory earthquakes [J].
+\newblock Geophysical Research Letters, 2017, 44\penalty0 (18): 9276-9282.
+
+\bibitem[Runge {\bibetal}(2015)Runge, Petoukhov, Donges, Hlinka, Jajcay,
+  Vejmelka, Hartman, Marwan, Palu{\v{s}}, and Kurths]{runge2015identifying}
+Runge~J, Petoukhov~V, Donges~J~F, et~al.
+\newblock Identifying causal gateways and mediators in complex spatio-temporal
+  systems [J].
+\newblock Nature Communications, 2015, 6\penalty0 (1): 1-10.
+
+\bibitem[Sahoo {\bibetal}(2017)Sahoo, Russo, Elliott, and
+  Foster]{sahoo2017machine}
+Sahoo~S, Russo~T, Elliott~J, et~al.
+\newblock Machine learning algorithms for modeling groundwater level changes in
+  agricultural regions of the US [J].
+\newblock Water Resources Research, 2017, 53\penalty0 (5): 3878-3895.
+
+\bibitem[Shodiq {\bibetal}(2018)Shodiq, Kusuma, Rifqi, Barakbah, and
+  Harsono]{shodiq2018neural}
+Shodiq~M~N, Kusuma~D~H, Rifqi~M~G, et~al.
+\newblock Neural network for earthquake prediction based on automatic
+  clustering in indonesia [J].
+\newblock JOIV: International Journal on Informatics Visualization, 2018,
+  2\penalty0 (1): 37-43.
+
+\bibitem[Singh {\bibetal}(2019)Singh and Bhargawa]{singh2019prediction}
+Singh~A, Bhargawa~A.
+\newblock Prediction of declining solar activity trends during solar cycles 25
+  and 26 and indication of other solar minimum [J].
+\newblock Astrophysics and Space Science, 2019, 364\penalty0 (1): 1-7.
+
+\bibitem[Singh {\bibetal}(2010)Singh, Pal, and Singh]{singh2010estimation}
+Singh~K~K, Pal~M, Singh~V.
+\newblock Estimation of mean annual flood in indian catchments using
+  backpropagation neural network and M5 model tree [J].
+\newblock Water Resources Management, 2010, 24\penalty0 (10): 2007-2019.
+
+\bibitem[Sobolev(2007)]{Sobolev2007On}
+Sobolev~G.
+\newblock On applicability of the rtl prognostic algorithms and energy
+  estimation to sakhalin seismicity [J/OL].
+\newblock Journal of Volcanology and Seismology, 2007, 1: 198-211.
+\newblock DOI: \doi{10.1134/S0742046307030050}.
+
+\bibitem[Solanki {\bibetal}(2011)Solanki and Krivova]{solanki2011analyzing}
+Solanki~S~K, Krivova~N~A.
+\newblock Analyzing solar cycles [J].
+\newblock Science, 2011, 334\penalty0 (6058): 916-917.
+
+\bibitem[Solomatine {\bibetal}(2003)Solomatine and Dulal]{solomatine2003model}
+Solomatine~D~P, Dulal~K~N.
+\newblock Model trees as an alternative to neural networks in rainfall--runoff
+  modelling [J].
+\newblock Hydrological Sciences Journal, 2003, 48\penalty0 (3): 399-411.
+
+\bibitem[Solomatine {\bibetal}(2004)Solomatine and Xue]{solomatine2004m5}
+Solomatine~D~P, Xue~Y.
+\newblock M5 model trees and neural networks: Application to flood forecasting
+  in the upper reach of the huai river in China [J].
+\newblock Journal of Hydrologic Engineering, 2004, 9\penalty0 (6): 491-501.
+
+\bibitem[Sun(2013)]{sun2013predicting}
+Sun~A~Y.
+\newblock Predicting groundwater level changes using GRACE data [J].
+\newblock Water Resources Research, 2013, 49\penalty0 (9): 5900-5912.
+
+\bibitem[Sun {\bibetal}(2015)Sun, Wendi, Kim, and Liong]{Sun2015Technical}
+Sun~Y, Wendi~D, Kim~D~E, et~al.
+\newblock Technical note: Application of artificial neural networks in
+  groundwater table forecasting --- A case study in Singapore swamp forest
+  [J/OL].
+\newblock Hydrology and Earth System Sciences Discussions, 2015, 12: 9317-9336.
+\newblock DOI: \doi{10.5194/hessd-12-9317-2015}.
+
+\bibitem[Sunkara {\bibetal}(2009)Sunkara and Tiwari]{Sunkara2009Model}
+Sunkara~S, Tiwari~R.
+\newblock Model dissection from earthquake time series: A comparative analysis
+  using modern non-linear forecasting and artificial neural network approaches
+  [J/OL].
+\newblock Computers \& Geosciences, 2009, 35: 191-204.
+\newblock DOI: \doi{10.1016/j.cageo.2007.11.011}.
+
+\bibitem[Tapoglou {\bibetal}(2014)Tapoglou, Karatzas, Trichakis, and
+  Varouchakis]{tapoglou2014spatio}
+Tapoglou~E, Karatzas~G~P, Trichakis~I~C, et~al.
+\newblock A spatio-temporal hybrid neural network-Kriging model for groundwater
+  level simulation [J].
+\newblock Journal of Hydrology, 2014, 519: 3193-3203.
+
+\bibitem[Toth(1971)]{toth1971groundwater}
+T{\'o}th~J.
+\newblock Groundwater discharge: A common generator of diverse geologic and
+  morphologic phenomena [J].
+\newblock Hydrological Sciences Journal, 1971, 16\penalty0 (1): 7-24.
+
+\bibitem[T{\'o}th(1999)]{toth1999groundwater}
+T{\'o}th~J.
+\newblock Groundwater as a geologic agent: An overview of the causes,
+  processes, and manifestations [J].
+\newblock Hydrogeology Journal, 1999, 7\penalty0 (1): 1-14.
+
+\bibitem[Turing(2009)]{turing2009computing}
+Turing~A~M.
+\newblock Computing machinery and intelligence [M]//\allowbreak
+Parsing the turing test.
+\newblock Springer, 2009: 23-65.
+
+\bibitem[Wada {\bibetal}(2010)Wada, Van~Beek, Van~Kempen, Reckman, Vasak, and
+  Bierkens]{wada2010global}
+Wada~Y, Van~Beek~L~P, Van~Kempen~C~M, et~al.
+\newblock Global depletion of groundwater resources [J].
+\newblock Geophysical Research Letters, 2010, 37\penalty0 (20): 20.
+
+\bibitem[Wang {\bibetal}(2017)Wang, Guo, Yu, and Li]{Wang2017Earthquake}
+Wang~Q, Guo~Y, Yu~L, et~al.
+\newblock Earthquake prediction based on spatio-temporal data mining: An lstm
+  network approach [J/OL].
+\newblock IEEE Transactions on Emerging Topics in Computing, 2017, PP: 1-1.
+\newblock DOI: \doi{10.1109/TETC.2017.2699169}.
+
+\bibitem[Wunsch {\bibetal}(2018)Wunsch, Liesch, and
+  Broda]{wunsch2018forecasting}
+Wunsch~A, Liesch~T, Broda~S.
+\newblock Forecasting groundwater levels using nonlinear autoregressive
+  networks with exogenous input (NARX) [J].
+\newblock Journal of Hydrology, 2018, 567: 743-758.
+
+\bibitem[Wyss {\bibetal}(1997)Wyss, Aceves, Park, Geller, Jackson, Kagan, and
+  Mulargia]{wyss1997cannot}
+Wyss~M, Aceves~R~L, Park~S~K, et~al.
+\newblock Cannot earthquakes be predicted? [J].
+\newblock Science, 1997, 278\penalty0 (5337): 487-490.
+
+\bibitem[Yadav {\bibetal}(2017)Yadav, Ch, Mathur, and
+  Adamowski]{yadav2017assessing}
+Yadav~B, Ch~S, Mathur~S, et~al.
+\newblock Assessing the suitability of extreme learning machines (ELM) for
+  groundwater level prediction [J].
+\newblock Journal of Water and Land Development, 2017\penalty0 (32): 103-112.
+
+\bibitem[Zahiri {\bibetal}(2018)Zahiri and Najafzadeh]{zahiri2018optimized}
+Zahiri~A, Najafzadeh~M.
+\newblock Optimized expressions to evaluate the flow discharge in main channels
+  and floodplains using evolutionary computing and model classification [J].
+\newblock International Journal of River Basin Management, 2018, 16\penalty0
+  (1): 123-132.
+
+\bibitem[Zamani {\bibetal}(2013)Zamani, Sorbi, and
+  Safavi]{zamani2013application}
+Zamani~A, Sorbi~M~R, Safavi~A~A.
+\newblock Application of neural network and anfis model for earthquake
+  occurrence in iran [J].
+\newblock Earth Science Informatics, 2013, 6\penalty0 (2): 71-85.
+
+\bibitem[Zhang {\bibetal}(2002)Zhang, Liu, and Shi]{Zhang2002An}
+Zhang~G~M, Liu~J, Shi~Y.
+\newblock An scientific evaluation of annual earthquake prediction ability
+  [J/OL].
+\newblock Acta Seismologica Sinica, 2002, 15: 550-558.
+\newblock DOI: \doi{10.1007/s11589-002-0024-z}.
+
+\bibitem[Zhang {\bibetal}(1996)Zhang, Bai, Libra, Rowden, and
+  Liu]{zhang1996simulation}
+Zhang~Y~K, Bai~E~W, Libra~R, et~al.
+\newblock Simulation of spring discharge from a limestone aquifer in Iowa, USA
+  [J].
+\newblock Hydrogeology Journal, 1996, 4\penalty0 (4): 41-54.
+
+\bibitem[Zhao {\bibetal}(2008)Zhao, Wang, Zong, Tang, and
+  Le]{zhao2008prediction}
+Zhao~H~J, Wang~J~L, Zong~W~G, et~al.
+\newblock Prediction of the smoothed monthly mean sunspot numbers by means of
+  rbf (radial basic function) neural networks [J].
+\newblock Chinese Journal of Geophysics, 2008, 51\penalty0 (1): 20-24.
+
+\bibitem[Zhong {\bibetal}(2010)Zhong and Zhang]{zhong2010prediction}
+Zhong~M, Zhang~Q.
+\newblock Prediction of reservoir-induced earthquake based on fuzzy theory [J].
+\newblock Proc. ISNNS, 2010: 101-104.
+
+\end{thebibliography}
